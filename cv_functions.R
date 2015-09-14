@@ -36,7 +36,7 @@ make_mrbayes_block <- function(seq_data, file_name, clock_model = 'strict', ss =
 
     #SELECT one of the options below
     ss_config <-'ssp Nruns=1 samplefreq=20;\nss ngen=1000000 ;\nsumss;\nend;\n'
-    train_config <- 'mcmcp ngen=20000000 diagnfreq=5000 samplefreq=5000 printfreq= 5000 Nruns=1;\n mcmc;\nend;\n'
+    train_config <- 'mcmcp ngen=20000000 diagnfreq=20000 samplefreq=20000 printfreq= 20000 Nruns=1;\n mcmc;\nend;\n'
     write.nexus.data(seq_data, file_name)
 
     if(ss){
