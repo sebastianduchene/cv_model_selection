@@ -1,5 +1,5 @@
 #NEXUS
-[Data written by write.nexus.data.R, Mon Sep 14 10:27:35 2015]
+[Data written by write.nexus.data.R, Wed Sep 16 18:18:46 2015]
 BEGIN DATA;
   DIMENSIONS NTAX=50 NCHAR=1000;
   FORMAT DATATYPE=DNA MISSING=? GAP=- INTERLEAVE=YES;
@@ -727,6 +727,6 @@ prset nodeagepr=calibrated;
 prset clockratepr = normal(0.01,0.005);
 lset rates=gamma nst=6;
 lset nst = 6;
- mcmcp ngen=20000000 diagnfreq=20000 samplefreq=20000 printfreq= 20000 Nruns=1;
+ mcmcp ngen=10000000 diagnfreq=10000 samplefreq=10000 printfreq= 10000 Nruns=1;
  mcmc;
 end;
