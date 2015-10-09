@@ -128,7 +128,7 @@ name="alignment">
         <log idref="likelihood"/>
         <log idref="prior"/>
         <log idref="treeLikelihood.s1_relaxed"/>
-        <log id="TreeHeight.t:s1_relaxed" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:s1_relaxed"/>
+<!--        <log id="TreeHeight.t:s1_relaxed" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:s1_relaxed"/> -->
         <log idref="BirthDeath.t:s1_relaxed"/>
         <log idref="birthRate2.t:s1_relaxed"/>
         <log idref="relativeDeathRate2.t:s1_relaxed"/>

@@ -141,7 +141,7 @@ name="alignment">
         <log idref="likelihood"/>
         <log idref="prior"/>
         <log id="all.prior1" spec="beast.math.distributions.MRCAPrior" monophyletic="true">
-            <tree id="Tree.t:s1_relaxed" estimate="false">
+            <tree id="Tree.t:s1_strict" estimate="false">
                 <taxonset id="TaxonSet.s1_relaxed" spec="TaxonSet">
                     <alignment idref="s1_relaxed"/>
                 </taxonset>
@@ -164,11 +164,11 @@ name="alignment">
             </Normal>
         </log>
         <log id="all.prior2" spec="beast.math.distributions.MRCAPrior" monophyletic="true">
-            <tree id="Tree.t:s1_strict" estimate="false">
+            <!--<tree id="Tree.t:s1_strict" estimate="false">
                 <taxonset id="TaxonSet.s1_strict" spec="TaxonSet">
                     <alignment idref="s1_strict"/>
                 </taxonset>
-            </tree>
+            </tree>-->
             <taxonset id="all2" spec="TaxonSet">
                 <taxon idref="t1"/>
                 <taxon idref="t10"/>
@@ -202,7 +202,7 @@ name="alignment">
         <log idref="prior"/>
     </logger>
 
-    <logger id="treelog.t:s1_strict" fileName="$(tree).trees" logEvery="1000" mode="tree">
+    <logger id="treelog.t:s1_strict" fileName="s1_strict_strict.trees" logEvery="1000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:s1_strict" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:s1_strict"/>
     </logger>
 
