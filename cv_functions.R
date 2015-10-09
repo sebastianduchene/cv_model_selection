@@ -46,7 +46,20 @@ phylo_likelihood <- function(nex_data_file, log_file, trees_file, train_indices 
 make_mrbayes_block <- function(seq_data, file_name, clock_model = 'strict', ss = T){
     require(ape)
 # If training  == T. select only the indexed data to create the nexus file. Note that these are the training indices, not those for hte test set
-    calibrations <- 'begin Mrbayes;\ncalibrate\nt1_7.58=fixed(7.58)\nt2_1.33=fixed(1.33)\nt3_7=fixed(7)\nt4_5=fixed(5)\nt5_11=fixed(11)\nt6_3=fixed(3)\nt7_8.75=fixed(8.75)\nt8_13.17=fixed(13.17)\nt9_1=fixed(1)\nt10_5.75=fixed(5.75)\nt11_11.08=fixed(11.08)\nt12_0.42=fixed(0.42)\nt13_6.25=fixed(6.25)\nt14_5.33=fixed(5.33)\nt15_8.92=fixed(8.92)\nt16_6=fixed(6)\nt17_11.25=fixed(11.25)\nt18_3.5=fixed(3.5)\nt19_3=fixed(3)\nt20_8.5=fixed(8.5)\nt21_9.92=fixed(9.92)\nt22_2.33=fixed(2.33)\nt23_11.67=fixed(11.67)\nt24_7.67=fixed(7.67)\nt25_6.08=fixed(6.08)\nt26_6.92=fixed(6.92)\nt27_4.25=fixed(4.25)\nt28_8.92=fixed(8.92)\nt29_3.67=fixed(3.67)\nt30_8.83=fixed(8.83)\nt31_1.5=fixed(1.5)\nt32_0=fixed(0)\nt33_4.92=fixed(4.92)\nt34_0.08=fixed(0.08)\nt35_6.5=fixed(6.5)\nt36_11.42=fixed(11.42)\nt37_7.42=fixed(7.42)\nt38_4.75=fixed(4.75)\nt39_6.58=fixed(6.58)\nt40_5.92=fixed(5.92)\nt41_11.5=fixed(11.5)\nt42_8.58=fixed(8.58)\nt43_5.5=fixed(5.5)\nt44_11.33=fixed(11.33)\nt45_4=fixed(4)\nt46_8.17=fixed(8.17)\nt47_8.17=fixed(8.17)\nt48_2.5=fixed(2.5)\nt49_2.25=fixed(2.25)\nt50_3.25=fixed(3.25);\n'
+    names_dates <- matrix(NA, nrow(seq_data), 2)
+    names_dates[, 1] <- rownames(seq_data)
+    names_split <- strsplit(rownames(seq_data), '_')
+
+    for(i in 1:length(names_split)){
+        names_dates[i, 2] <- names_split[[i]][2]
+    }
+
+    calibrations <- vector()
+    calibrations[1] <- 'begin Mrbayes;\ncalibrate\n'
+    for(i in 1:nrow(names_dates)){
+        calibrations[i+1] <- paste0(names_dates[i, 1], '=', 'fixed(', names_dates[i, 2], ')')
+    }
+    calibrations <- c(calibrations, ';\n')
 
     if(any(clock_model %in% c('strict', 'igr', 'tk02'))){
     model_template <- gsub('CLOCK_MODEL', clock_model, 'prset brlenspr=clock:uniform;\nprset clockvarpr=CLOCK_MODEL;\nprset nodeagepr=calibrated;\nprset clockratepr = normal(0.01,0.005);\nlset rates=gamma nst=6;\nlset nst = 6;\n')

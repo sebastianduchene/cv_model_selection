@@ -1,5 +1,5 @@
 #NEXUS
-[Data written by write.nexus.data.R, Tue Sep 22 23:03:42 2015]
+[Data written by write.nexus.data.R, Wed Sep 23 16:15:02 2015]
 BEGIN DATA;
   DIMENSIONS NTAX=50 NCHAR=2000;
   FORMAT DATATYPE=DNA MISSING=? GAP=- INTERLEAVE=YES;
@@ -1283,56 +1283,7 @@ END;
 
 begin Mrbayes;
 calibrate
-t1_7.58=fixed(7.58)
-t2_1.33=fixed(1.33)
-t3_7=fixed(7)
-t4_5=fixed(5)
-t5_11=fixed(11)
-t6_3=fixed(3)
-t7_8.75=fixed(8.75)
-t8_13.17=fixed(13.17)
-t9_1=fixed(1)
-t10_5.75=fixed(5.75)
-t11_11.08=fixed(11.08)
-t12_0.42=fixed(0.42)
-t13_6.25=fixed(6.25)
-t14_5.33=fixed(5.33)
-t15_8.92=fixed(8.92)
-t16_6=fixed(6)
-t17_11.25=fixed(11.25)
-t18_3.5=fixed(3.5)
-t19_3=fixed(3)
-t20_8.5=fixed(8.5)
-t21_9.92=fixed(9.92)
-t22_2.33=fixed(2.33)
-t23_11.67=fixed(11.67)
-t24_7.67=fixed(7.67)
-t25_6.08=fixed(6.08)
-t26_6.92=fixed(6.92)
-t27_4.25=fixed(4.25)
-t28_8.92=fixed(8.92)
-t29_3.67=fixed(3.67)
-t30_8.83=fixed(8.83)
-t31_1.5=fixed(1.5)
-t32_0=fixed(0)
-t33_4.92=fixed(4.92)
-t34_0.08=fixed(0.08)
-t35_6.5=fixed(6.5)
-t36_11.42=fixed(11.42)
-t37_7.42=fixed(7.42)
-t38_4.75=fixed(4.75)
-t39_6.58=fixed(6.58)
-t40_5.92=fixed(5.92)
-t41_11.5=fixed(11.5)
-t42_8.58=fixed(8.58)
-t43_5.5=fixed(5.5)
-t44_11.33=fixed(11.33)
-t45_4=fixed(4)
-t46_8.17=fixed(8.17)
-t47_8.17=fixed(8.17)
-t48_2.5=fixed(2.5)
-t49_2.25=fixed(2.25)
-t50_3.25=fixed(3.25);
+ t1_0=fixed(0) t2_15=fixed(15) t3_3=fixed(3) t4_4=fixed(4) t5_13=fixed(13) t6_8=fixed(8) t7_13=fixed(13) t8_6=fixed(6) t9_4=fixed(4) t10_46=fixed(46) t11_4=fixed(4) t12_32=fixed(32) t13_50=fixed(50) t14_2=fixed(2) t15_9=fixed(9) t16_49=fixed(49) t17_6=fixed(6) t18_49=fixed(49) t19_4=fixed(4) t20_44=fixed(44) t21_11=fixed(11) t22_11=fixed(11) t23_28=fixed(28) t24_17=fixed(17) t25_4=fixed(4) t26_35=fixed(35) t27_27=fixed(27) t28_20=fixed(20) t29_6=fixed(6) t30_45=fixed(45) t31_47=fixed(47) t32_1=fixed(1) t33_3=fixed(3) t34_5=fixed(5) t35_34=fixed(34) t36_13=fixed(13) t37_16=fixed(16) t38_45=fixed(45) t39_4=fixed(4) t40_46=fixed(46) t41_21=fixed(21) t42_20=fixed(20) t43_4=fixed(4) t44_48=fixed(48) t45_13=fixed(13) t46_43=fixed(43) t47_1=fixed(1) t48_26=fixed(26) t49_17=fixed(17) t50_33=fixed(33) ;
  prset brlenspr=clock:uniform;
 prset clockvarpr=tk02;
 prset nodeagepr=calibrated;
