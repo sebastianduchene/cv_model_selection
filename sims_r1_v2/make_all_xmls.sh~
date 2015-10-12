@@ -1,0 +1,7 @@
+#!/bin/bash
+
+files=`ls *xml`
+
+for i in $files; do
+    echo $i
+done

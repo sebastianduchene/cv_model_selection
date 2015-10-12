@@ -1,0 +1,7 @@
+#!/bin/bash
+
+trees=`ls sims_r1_v2/runs/*trees`
+
+for t in $trees; do
+    echo $t
+done

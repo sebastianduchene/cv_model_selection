@@ -19,7 +19,7 @@ name=\"alignment\">
 <map name=\"OneOnX\" >beast.math.distributions.OneOnX</map>
 
 <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"20000000\">
-    <state id=\"state\" storeEvery=\"5000\">
+    <state id=\"state\" storeEvery=\"50000\">
         <tree id=\"Tree.t:sequence_data\" name=\"stateNode\">
             <taxonset id=\"TaxonSet.sequence_data\" spec=\"TaxonSet\">
                 <alignment idref=\"sequence_data\"/>
@@ -125,7 +125,7 @@ name=\"alignment\">
         <down idref=\"Tree.t:sequence_data\"/>
     </operator>
 
-    <logger id=\"tracelog\" fileName=\"OUT_FILE_NAME.log\" logEvery=\"1000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
+    <logger id=\"tracelog\" fileName=\"OUT_FILE_NAME.log\" logEvery=\"10000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
         <log idref=\"posterior\"/>
         <log idref=\"likelihood\"/>
         <log idref=\"prior\"/>
@@ -140,14 +140,14 @@ name=\"alignment\">
         <log id=\"rate.c:sequence_data\" spec=\"beast.evolution.branchratemodel.RateStatistic\" branchratemodel=\"@RelaxedClock.c:sequence_data\" tree=\"@Tree.t:sequence_data\"/>
     </logger>
 
-    <logger id=\"screenlog\" logEvery=\"1000\">
+    <logger id=\"screenlog\" logEvery=\"10000\">
         <log idref=\"posterior\"/>
         <log id=\"ESS.0\" spec=\"util.ESS\" arg=\"@posterior\"/>
         <log idref=\"likelihood\"/>
         <log idref=\"prior\"/>
     </logger>
 
-    <logger id=\"treelog.t:sequence_data\" fileName=\"OUT_FILE_NAME.trees\" logEvery=\"1000\" mode=\"tree\">
+    <logger id=\"treelog.t:sequence_data\" fileName=\"OUT_FILE_NAME.trees\" logEvery=\"10000\" mode=\"tree\">
         <log id=\"TreeWithMetaDataLogger.t:sequence_data\" spec=\"beast.evolution.tree.TreeWithMetaDataLogger\" branchratemodel=\"@RelaxedClock.c:sequence_data\" tree=\"@Tree.t:sequence_data\"/>
     </logger>
 
@@ -175,7 +175,7 @@ name=\"alignment\">
 <map name=\"OneOnX\" >beast.math.distributions.OneOnX</map>
 
 <run id=\"mcmc\" spec=\"MCMC\" chainLength=\"20000000\">
-    <state id=\"state\" storeEvery=\"5000\">
+    <state id=\"state\" storeEvery=\"50000\">
         <tree id=\"Tree.t:sequence_data\" name=\"stateNode\">
             <taxonset id=\"TaxonSet.sequence_data\" spec=\"TaxonSet\">
                 <alignment idref=\"sequence_data\"/>
@@ -262,7 +262,7 @@ name=\"alignment\">
         <up idref=\"clockRate.c:sequence_data\"/>
         <down idref=\"Tree.t:sequence_data\"/>
     </operator>
-    <logger id=\"tracelog\" fileName=\"OUT_FILE_NAME.log\" logEvery=\"1000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
+    <logger id=\"tracelog\" fileName=\"OUT_FILE_NAME.log\" logEvery=\"10000\" model=\"@posterior\" sanitiseHeaders=\"true\" sort=\"smart\">
         <log idref=\"posterior\"/>
         <log idref=\"likelihood\"/>
         <log idref=\"prior\"/>
@@ -274,13 +274,13 @@ name=\"alignment\">
         <log idref=\"all.prior\"/>
         <log idref=\"clockRate.c:sequence_data\"/>
     </logger>
-    <logger id=\"screenlog\" logEvery=\"1000\">
+    <logger id=\"screenlog\" logEvery=\"10000\">
         <log idref=\"posterior\"/>
         <log id=\"ESS.0\" spec=\"util.ESS\" arg=\"@posterior\"/>
         <log idref=\"likelihood\"/>
         <log idref=\"prior\"/>
     </logger>
-    <logger id=\"treelog.t:sequence_data\" fileName=\"OUT_FILE_NAME.trees\" logEvery=\"1000\" mode=\"tree\">
+    <logger id=\"treelog.t:sequence_data\" fileName=\"OUT_FILE_NAME.trees\" logEvery=\"10000\" mode=\"tree\">
         <log id=\"TreeWithMetaDataLogger.t:sequence_data\" spec=\"beast.evolution.tree.TreeWithMetaDataLogger\" tree=\"@Tree.t:sequence_data\"/>
     </logger>
 </run>
