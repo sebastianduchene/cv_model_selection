@@ -1,4 +1,6 @@
-#!//anaconda/bin/python
+#!/Users/sebastianducheneAIr/anaconda/bin/python
+
+#//anaconda/bin/python
 
 import dendropy as dp
 import sys, re
