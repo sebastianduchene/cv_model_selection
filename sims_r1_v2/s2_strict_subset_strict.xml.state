@@ -1,0 +1,21 @@
+<itsabeastystatewerein version='2.0' sample='324999'>
+<statenode id='Tree.t:sequence_data'>(((5:11.81759795252187,7:11.81759795252187)11:2.974725728764632,6:14.792323681286502)16:84.8599345600996,(((0:54.67238746091967,1:54.67238746091967)15:10.597406072089719,((2:18.214114803475876,(4:4.354595946461356,8:4.354595946461356)10:13.859518857014521)12:30.817861149076467,9:49.031975952552344)17:16.237817580457047)13:7.048926360366707,3:72.3187198933761)14:27.33353834801001)18:0.0</statenode>
+<statenode id='birthRate2.t:sequence_data'>birthRate2.t:sequence_data[1 1] (0.0,10000.0): 0.015891104979614573 </statenode>
+<statenode id='relativeDeathRate2.t:sequence_data'>relativeDeathRate2.t:sequence_data[1 1] (0.0,1.0): 0.05781667837451234 </statenode>
+<statenode id='clockRate.c:sequence_data'>clockRate.c:sequence_data[1 1] (0.0,Infinity): 8.533265177010721E-4 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"BirthDeathTreeScaler.t:sequence_data","p":0.8679905904068175,"accept":522,"reject":11180,"acceptFC":502,"rejectFC":10301,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathTreeRootScaler.t:sequence_data","p":0.8553818927427125,"accept":482,"reject":11153,"acceptFC":470,"rejectFC":10243,"rejectIv":246,"rejectOp":246},
+{"id":"BirthDeathUniformOperator.t:sequence_data","p":"NaN","accept":36589,"reject":79657,"acceptFC":33791,"rejectFC":73320,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathSubtreeSlide.t:sequence_data","p":15.577918331102497,"accept":16395,"reject":41419,"acceptFC":13197,"rejectFC":40003,"rejectIv":8217,"rejectOp":8217},
+{"id":"BirthDeathNarrow.t:sequence_data","p":"NaN","accept":1584,"reject":56252,"acceptFC":1361,"rejectFC":51931,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathWide.t:sequence_data","p":"NaN","accept":23,"reject":11589,"acceptFC":17,"rejectFC":10662,"rejectIv":6096,"rejectOp":6096},
+{"id":"BirthDeathWilsonBalding.t:sequence_data","p":"NaN","accept":17,"reject":11595,"acceptFC":15,"rejectFC":10657,"rejectIv":3889,"rejectOp":3889},
+{"id":"BirthRateScaler.t:sequence_data","p":0.24767680750654963,"accept":3988,"reject":7582,"acceptFC":3272,"rejectFC":7405,"rejectIv":0,"rejectOp":0},
+{"id":"DeathRateScaler.t:sequence_data","p":0.15288415929606106,"accept":3786,"reject":7855,"acceptFC":3146,"rejectFC":7611,"rejectIv":3922,"rejectOp":3922},
+{"id":"StrictClockRateScaler.c:sequence_data","p":0.6498008907227333,"accept":2929,"reject":8659,"acceptFC":2590,"rejectFC":8123,"rejectIv":0,"rejectOp":0},
+{"id":"strictClockUpDownOperator.c:sequence_data","p":0.9333470708429481,"accept":1130,"reject":10614,"acceptFC":1103,"rejectFC":9727,"rejectIv":0,"rejectOp":0}
+]}
+-->
