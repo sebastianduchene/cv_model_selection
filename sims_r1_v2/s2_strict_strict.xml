@@ -217,7 +217,7 @@ name="alignment">
         <log idref="prior"/>
     </logger>
 
-    <logger id="treelog.t:s2_strict" fileName="$(tree).trees" logEvery="1000" mode="tree">
+    <logger id="treelog.t:s2_strict" fileName="s2_strict_strict.trees" logEvery="1000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:s2_strict" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:s2_strict"/>
     </logger>
 

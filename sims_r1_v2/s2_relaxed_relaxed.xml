@@ -202,7 +202,7 @@ name="alignment">
         <log idref="prior"/>
     </logger>
 
-    <logger id="treelog.t:s2_relaxed" fileName="$(tree).trees" logEvery="1000" mode="tree">
+    <logger id="treelog.t:s2_relaxed" fileName="s2_relaxed_relaxed.trees" logEvery="1000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:s2_relaxed" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:s2_relaxed" tree="@Tree.t:s2_relaxed"/>
     </logger>
 
