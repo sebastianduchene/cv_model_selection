@@ -1,0 +1,27 @@
+<itsabeastystatewerein version='2.0' sample='20000000'>
+<statenode id='Tree.t:sequence_data'>((0:3.5933133169180085,((((1:0.43808482888834066,7:0.43808482888834066)12:0.9677531775253411,4:1.4058380064136817)17:0.0014536707166261653,3:1.407291677130308)13:2.0986747387559834,9:3.505966415886291)14:0.08734690103171738)11:96.13600551515779,(((2:0.20234716555025445,6:0.20234716555025445)10:5.848037622795992,5:6.050384788346246)15:15.507723878642242,8:21.55810866698849)16:78.17121016508732)18:0.0</statenode>
+<statenode id='birthRate2.t:sequence_data'>birthRate2.t:sequence_data[1 1] (0.0,10000.0): 0.03552444070845689 </statenode>
+<statenode id='relativeDeathRate2.t:sequence_data'>relativeDeathRate2.t:sequence_data[1 1] (0.0,1.0): 0.8050377429223872 </statenode>
+<statenode id='ucldMean.c:sequence_data'>ucldMean.c:sequence_data[1 1] (-Infinity,Infinity): 0.003337679762872864 </statenode>
+<statenode id='ucldStdev.c:sequence_data'>ucldStdev.c:sequence_data[1 1] (0.0,Infinity): 0.3312235701778924 </statenode>
+<statenode id='rateCategories.c:sequence_data'>rateCategories.c:sequence_data[18 1] (0,17): 13 4 13 17 2 6 8 13 11 12 4 0 14 8 7 6 15 3 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"BirthDeathTreeScaler.t:sequence_data","p":0.9212852001427266,"accept":44140,"reject":477733,"acceptFC":44123,"rejectFC":476879,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathTreeRootScaler.t:sequence_data","p":0.9233966454344802,"accept":45321,"reject":476300,"acceptFC":45306,"rejectFC":475478,"rejectIv":1239,"rejectOp":1239},
+{"id":"BirthDeathUniformOperator.t:sequence_data","p":"NaN","accept":1406452,"reject":3811513,"acceptFC":1404210,"rejectFC":3805015,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathSubtreeSlide.t:sequence_data","p":2.302087969072801,"accept":901217,"reject":1709198,"acceptFC":900550,"rejectFC":1705354,"rejectIv":433204,"rejectOp":433204},
+{"id":"BirthDeathNarrow.t:sequence_data","p":"NaN","accept":97052,"reject":2508562,"acceptFC":96909,"rejectFC":2504334,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathWide.t:sequence_data","p":"NaN","accept":1664,"reject":520402,"acceptFC":1662,"rejectFC":519526,"rejectIv":276014,"rejectOp":276014},
+{"id":"BirthDeathWilsonBalding.t:sequence_data","p":"NaN","accept":1232,"reject":520651,"acceptFC":1225,"rejectFC":519745,"rejectIv":164019,"rejectOp":164019},
+{"id":"BirthRateScaler.t:sequence_data","p":0.20462554729558907,"accept":139362,"reject":382331,"acceptFC":138642,"rejectFC":382174,"rejectIv":0,"rejectOp":0},
+{"id":"DeathRateScaler.t:sequence_data","p":0.47095583187538825,"accept":186170,"reject":336761,"acceptFC":186094,"rejectFC":335930,"rejectIv":216856,"rejectOp":216856},
+{"id":"ucldMeanScaler.c:sequence_data","p":0.697151812754654,"accept":33697,"reject":140818,"acceptFC":33669,"rejectFC":140562,"rejectIv":0,"rejectOp":0},
+{"id":"ucldStdevScaler.c:sequence_data","p":0.6035718557829083,"accept":325147,"reject":195919,"acceptFC":325121,"rejectFC":195074,"rejectIv":0,"rejectOp":0},
+{"id":"CategoriesRandomWalk.c:sequence_data","p":"NaN","accept":985050,"reject":754051,"acceptFC":983928,"rejectFC":752163,"rejectIv":642276,"rejectOp":642276},
+{"id":"CategoriesSwapOperator.c:sequence_data","p":"NaN","accept":1013641,"reject":726647,"acceptFC":1013107,"rejectFC":724203,"rejectIv":0,"rejectOp":0},
+{"id":"CategoriesUniform.c:sequence_data","p":"NaN","accept":1188738,"reject":548491,"acceptFC":1188053,"rejectFC":546319,"rejectIv":0,"rejectOp":0},
+{"id":"relaxedUpDownOperator.c:sequence_data","p":0.9537563571908073,"accept":81233,"reject":440508,"acceptFC":81198,"rejectFC":439699,"rejectIv":0,"rejectOp":0}
+]}
+-->
