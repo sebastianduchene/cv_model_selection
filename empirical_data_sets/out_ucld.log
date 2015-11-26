@@ -3,9 +3,10 @@
 #
 #<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.core.util.CompoundDistribution">
 #    <distribution id="prior" spec="beast.core.util.CompoundDistribution">
-#        <distribution id="CoalescentConstant.t:alignment" spec="beast.evolution.tree.coalescent.Coalescent">
-#            <populationModel id="ConstantPopulation.t:alignment" spec="beast.evolution.tree.coalescent.ConstantPopulation">
-#                <parameter id="popSize.t:alignment" name="popSize">0.3</parameter>
+#        <distribution id="CoalescentExponential.t:alignment" spec="beast.evolution.tree.coalescent.Coalescent">
+#            <populationModel id="ExponentialGrowth.t:alignment" spec="beast.evolution.tree.coalescent.ExponentialGrowth">
+#                <parameter id="ePopSize.t:alignment" name="popSize">0.3</parameter>
+#                <parameter id="growthRate.t:alignment" name="growthRate">3.0E-4</parameter>
 #            </populationModel>
 #            <treeIntervals id="TreeIntervals.t:alignment" spec="beast.evolution.tree.coalescent.TreeIntervals">
 #                <tree id="Tree.t:alignment">
@@ -91,9 +92,9 @@
 #        </distribution>
 #        <prior id="ucldStdevPrior.c:alignment" name="distribution">
 #            <parameter id="ucldStdev.c:alignment" lower="0.0" name="x">0.1</parameter>
-#            <Gamma id="Gamma.3" name="distr">
-#                <parameter estimate="false" id="RealParameter.00" name="alpha">0.5396</parameter>
-#                <parameter estimate="false" id="RealParameter.001" name="beta">0.3819</parameter>
+#            <Gamma id="Gamma.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.111" name="alpha">0.5396</parameter>
+#                <parameter estimate="false" id="RealParameter.222" name="beta">0.3819</parameter>
 #            </Gamma>
 #        </prior>
 #        <prior id="MeanRatePrior.c:alignment" name="distribution">
@@ -106,12 +107,18 @@
 #                <parameter id="RealParameter.0" lower="0.0" name="mean" upper="0.0">1.0</parameter>
 #            </Exponential>
 #        </prior>
-#        <prior id="PopSizePrior.t:alignment" name="distribution" x="@popSize.t:alignment">
+#        <prior id="ePopSizePrior.t:alignment" name="distribution" x="@ePopSize.t:alignment">
 #            <OneOnX id="OneOnX.0" name="distr"/>
+#        </prior>
+#        <prior id="GrowthRatePrior.t:alignment" name="distribution" x="@growthRate.t:alignment">
+#            <LaplaceDistribution id="LaplaceDistribution.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.001" name="mu">0.0010</parameter>
+#                <parameter estimate="false" id="RealParameter.002" name="scale">30.701135</parameter>
+#            </LaplaceDistribution>
 #        </prior>
 #        <prior id="RateACPrior.s:alignment" name="distribution">
 #            <parameter id="rateAC.s:alignment" lower="0.0" name="x">1.0</parameter>
-#            <Gamma id="Gamma.0" name="distr">
+#            <Gamma id="Gamma.111" name="distr">
 #                <parameter estimate="false" id="RealParameter.01" name="alpha">0.05</parameter>
 #                <parameter estimate="false" id="RealParameter.02" name="beta">10.0</parameter>
 #            </Gamma>
@@ -159,7 +166,7 @@
 #            </siteModel>
 #            <branchRateModel clock.rate="@ucldMean.c:alignment" id="RelaxedClock.c:alignment" normalize="true" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" tree="@Tree.t:alignment">
 #                <LogNormal S="@ucldStdev.c:alignment" id="LogNormalDistributionModel.c:alignment" meanInRealSpace="true" name="distr">
-#                    <parameter estimate="false" id="RealParameter.011" lower="0.0" name="M" upper="1.0">1.0</parameter>
+#                    <parameter estimate="false" id="RealParameter.333" lower="0.0" name="M" upper="1.0">1.0</parameter>
 #                </LogNormal>
 #                <rateCategories dimension="142" id="rateCategories.c:alignment" spec="beast.core.parameter.IntegerParameter">1</rateCategories>
 #            </branchRateModel>
@@ -167,5 +174,5 @@
 #    </distribution>
 #</input>
 #
-Sample	posterior	likelihood	prior	treeLikelihood	TreeHeight	freqParameter.1	freqParameter.2	freqParameter.3	freqParameter.4	rateAC	rateAG	rateAT	rateCG	rateGT	gammaShape	popSize	CoalescentConstant	ucldMean	ucldStdev	rate.mean	rate.variance	rate.coefficientOfVariation	mutationRate	
-0	-30497.966036640824	-30368.64209875299	-129.32393788783367	-30368.64209875299	21.111758845482026	0.25	0.25	0.25	0.25	1.0	1.0	1.0	1.0	1.0	1.0	0.3	-114.44257519974525	1.0	0.1	0.9999999999999994	0.009432600443399698	0.10010863755279226	1.0	
+Sample	posterior	likelihood	prior	treeLikelihood	TreeHeight	freqParameter.1	freqParameter.2	freqParameter.3	freqParameter.4	rateAC	rateAG	rateAT	rateCG	rateGT	gammaShape	CoalescentExponential	ePopSize	growthRate	ucldMean	ucldStdev	rate.mean	rate.variance	rate.coefficientOfVariation	mutationRate	
+0	-29113.98775189173	-28973.682406534303	-140.30534535742885	-28973.682406534303	19.335539290785704	0.25	0.25	0.25	0.25	1.0	1.0	1.0	1.0	1.0	1.0	-121.30651306372667	0.3	3.0E-4	1.0	0.1	0.9999999999999999	0.009578508686022532	0.10011286926514808	1.0	
