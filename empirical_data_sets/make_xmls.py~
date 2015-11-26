@@ -1,0 +1,12 @@
+def parse_fasta(seq_file):
+    seqdat = open(seq_file, 'r').readlines()
+    seq_dict = {}
+    
+    for s in range(len(seqdat)):
+        if '>' in seqdat[s]:
+            seq_dict[re.sub('>| |\n', '', seqdat[s])] = seqdat[s+1]
+    return seq_dict
+
+def get_date(seq_name):
+    date = re.findall('_([0-9]*[.]*[0-9]*)$', seq_name)[0]    
+    return date

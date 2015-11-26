@@ -1,0 +1,1000 @@
+<?xml version="1.0" standalone="yes"?>
+<beast>
+  <taxa id="taxa">
+
+    <taxon id="AUS_SA_FlindersRanges_2002.79">
+    <date value="2002.79" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494932_AUS_SA_PLUM_1995.83">
+    <date value="1995.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494911_AUS_ACT_WESTCRK_2011.67">
+    <date value="2011.67" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494944_AUS_SA_TF-PT1743_2008.75">
+    <date value="2008.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494943_AUS_SA_TF-PT1731_2008.83">
+    <date value="2008.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494919_AUS_NSW_YOUNG_2011.58">
+    <date value="2011.58" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494950_AUS_WA_MANMAN_2010.75">
+    <date value="2010.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF594475_AUS_SA_Turretfield-07_2007.50">
+    <date value="2007.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_Bulgania_2009.65">
+    <date value="2009.65" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF594476_AUS_SA_Turretfield-09_2009.50">
+    <date value="2009.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494916_AUS_NSW_ROCKL-1_2011.25">
+    <date value="2011.25" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494925_AUS_SA_ECH_2008.75">
+    <date value="2008.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494915_AUS_NSW_ROCKF-2_2011.33">
+    <date value="2011.33" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494934_AUS_SA_ROXDWNS_2011.67">
+    <date value="2011.67" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494949_AUS_TAS_STHARM_2007.42">
+    <date value="2007.42" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_Motpena_2013.72">
+    <date value="2013.72" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494935_AUS_SA_TF-07_1999.83">
+    <date value="1999.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_WA_Bunbury_2000.13">
+    <date value="2000.13" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_BillaKallina_2004.50">
+    <date value="2004.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494918_AUS_NSW_WOODSTK_2011.25">
+    <date value="2011.25" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_NSW_Murrumbateman_BlueGums_2014.24">
+    <date value="2014.24" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494906_AUS_ACT_GUN-01_2009.25">
+    <date value="2009.25" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494945_AUS_SA_TF-PT1839_2009.83">
+    <date value="2009.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_Woodcroft_2005.76">
+    <date value="2005.76" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494910_AUS_ACT_PARKWOOD_1998.75">
+    <date value="1998.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="EU650679_AUS_NSW_NYNGAN_2005.83">
+    <date value="2005.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494940_AUS_SA_TF-2863_2011.67">
+    <date value="2011.67" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494936_AUS_SA_TF-13_1999.83">
+    <date value="1999.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494908_AUS_ACT_GUN-RP_1998.75">
+    <date value="1998.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494924_AUS_SA_CURNAMONA_1995.83">
+    <date value="1995.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_WA_Gnowangerup_1999.40">
+    <date value="1999.40" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_FlindersRanges_2006.59">
+    <date value="2006.59" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_NSW_Grafton_2013.52">
+    <date value="2013.52" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="GU373617_AUS_ACT_AINSLE-2_2009.50">
+    <date value="2009.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494917_AUS_NSW_ROCKL-2_2011.25">
+    <date value="2011.25" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_Hillbank_2008.79">
+    <date value="2008.79" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494948_AUS_TAS_COLLINS-1_2006.67">
+    <date value="2006.67" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_TAS_SouthArm_2007.34">
+    <date value="2007.34" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_Robe_2000.39">
+    <date value="2000.39" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494930_AUS_SA_ORR-1_2010.83">
+    <date value="2010.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_FlindersRanges_1999.81">
+    <date value="1999.81" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_NSW_Hall_WAT1-13_2007.94">
+    <date value="2007.94" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF594474_AUS_SA_Turretfield-06_2006.50">
+    <date value="2006.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_OneTreeHill_2003.71">
+    <date value="2003.71" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494907_AUS_ACT_GUN-HS_1998.75">
+    <date value="1998.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494952_AUS_WA_NARRIN_2010.92">
+    <date value="2010.92" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494912_AUS_NSW_OC-M2_2007.75">
+    <date value="2007.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494937_AUS_SA_TF-19_2006.92">
+    <date value="2006.92" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494920_AUS_NSW_VITTO_2011.17">
+    <date value="2011.17" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494946_AUS_SA_WILKA_2010.42">
+    <date value="2010.42" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="EU650680_AUS_NSW_NARRAWA_2006.83">
+    <date value="2006.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494947_AUS_SA_WILLOCHRACRK_1995.92">
+    <date value="1995.92" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494942_AUS_SA_TF-PT1350_2011.75">
+    <date value="2011.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494931_AUS_SA_PLUM-1_2010.67">
+    <date value="2010.67" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494929_AUS_SA_MERNMORA_1995.92">
+    <date value="1995.92" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494909_AUS_ACT_MTP-2_2010.17">
+    <date value="2010.17" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494933_AUS_SA_RENMARK_2011.75">
+    <date value="2011.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494938_AUS_SA_TF-1907_2006.92">
+    <date value="2006.92" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494913_AUS_NSW_OC-M8_2007.25">
+    <date value="2007.25" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494928_AUS_SA_LOB-OLIVER08_2003.67">
+    <date value="2003.67" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494914_AUS_NSW_ROCKF-1_2011.33">
+    <date value="2011.33" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_WA_WonganHills_2012.74">
+    <date value="2012.74" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494939_AUS_SA_TF-2186_2008.83">
+    <date value="2008.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="GU373618_AUS_ACT_PI-1_2009.50">
+    <date value="2009.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="AUS_SA_Coorong_2004.75">
+    <date value="2004.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494927_AUS_SA_GRNW_2008.83">
+    <date value="2008.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF594473_AUS_RHDV351-INOC_Passaged_1995.50">
+    <date value="1995.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494923_AUS_SA_BULG_2009.67">
+    <date value="2009.67" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494926_AUS_SA_FRNP-ORA_2008.50">
+    <date value="2008.50" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494922_AUS_SA_BARM_2008.83">
+    <date value="2008.83" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494951_AUS_WA_MARCHA_2010.75">
+    <date value="2010.75" direction="forwards" units="years"/>
+    </taxon>
+    
+    <taxon id="KF494941_AUS_SA_TF-PT1339_2011.67">
+    <date value="2011.67" direction="forwards" units="years"/>
+    </taxon>
+    
+</taxa>
+
+<alignment id="alignment" dataType="nucleotide">
+
+    <sequence>
+    <taxon idref="AUS_SA_FlindersRanges_2002.79"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCGGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494932_AUS_SA_PLUM_1995.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494911_AUS_ACT_WESTCRK_2011.67"/>
+    ATGGAGGGCAAAGCCCGAGCAGCACCGCAAGGAGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCGG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494944_AUS_SA_TF-PT1743_2008.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCATCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494943_AUS_SA_TF-PT1731_2008.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCATCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494919_AUS_NSW_YOUNG_2011.58"/>
+    ATGGAGGGCAAAGCCCGTGCAACACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494950_AUS_WA_MANMAN_2010.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF594475_AUS_SA_Turretfield-07_2007.50"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_Bulgania_2009.65"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGTGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF594476_AUS_SA_Turretfield-09_2009.50"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGTGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494916_AUS_NSW_ROCKL-1_2011.25"/>
+    ATGGAGGGCAAAGCCCGTGCGGCACCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494925_AUS_SA_ECH_2008.75"/>
+    ATGGAGGGCAAAGCCCGTGCGGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494915_AUS_NSW_ROCKF-2_2011.33"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494934_AUS_SA_ROXDWNS_2011.67"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494949_AUS_TAS_STHARM_2007.42"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_Motpena_2013.72"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGTGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494935_AUS_SA_TF-07_1999.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_WA_Bunbury_2000.13"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_BillaKallina_2004.50"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACCGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494918_AUS_NSW_WOODSTK_2011.25"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_NSW_Murrumbateman_BlueGums_2014.24"/>
+    ATGGAGGGCAAAGCCCGTGCGACACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494906_AUS_ACT_GUN-01_2009.25"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494945_AUS_SA_TF-PT1839_2009.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGCGGACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_Woodcroft_2005.76"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494910_AUS_ACT_PARKWOOD_1998.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="EU650679_AUS_NSW_NYNGAN_2005.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494940_AUS_SA_TF-2863_2011.67"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494936_AUS_SA_TF-13_1999.83"/>
+    ATGGAGGGCAAAGCCCGCGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494908_AUS_ACT_GUN-RP_1998.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494924_AUS_SA_CURNAMONA_1995.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_WA_Gnowangerup_1999.40"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTCCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_FlindersRanges_2006.59"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCTGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_NSW_Grafton_2013.52"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="GU373617_AUS_ACT_AINSLE-2_2009.50"/>
+    ATGGAGGGCAAAACCCGTGCAGCACCGCAAGGTGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494917_AUS_NSW_ROCKL-2_2011.25"/>
+    ATGGAGGGCAAAGCCCGTGCGGCACCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_Hillbank_2008.79"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAGGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494948_AUS_TAS_COLLINS-1_2006.67"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCTACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_TAS_SouthArm_2007.34"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_Robe_2000.39"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494930_AUS_SA_ORR-1_2010.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGTGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_FlindersRanges_1999.81"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_NSW_Hall_WAT1-13_2007.94"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF594474_AUS_SA_Turretfield-06_2006.50"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_OneTreeHill_2003.71"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCGGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494907_AUS_ACT_GUN-HS_1998.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494952_AUS_WA_NARRIN_2010.92"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494912_AUS_NSW_OC-M2_2007.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCGGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494937_AUS_SA_TF-19_2006.92"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494920_AUS_NSW_VITTO_2011.17"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494946_AUS_SA_WILKA_2010.42"/>
+    ATGGAGGGCAAAGCCCGCGCAGCACCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="EU650680_AUS_NSW_NARRAWA_2006.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494947_AUS_SA_WILLOCHRACRK_1995.92"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACCGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494942_AUS_SA_TF-PT1350_2011.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494931_AUS_SA_PLUM-1_2010.67"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494929_AUS_SA_MERNMORA_1995.92"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494909_AUS_ACT_MTP-2_2010.17"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494933_AUS_SA_RENMARK_2011.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494938_AUS_SA_TF-1907_2006.92"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494913_AUS_NSW_OC-M8_2007.25"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494928_AUS_SA_LOB-OLIVER08_2003.67"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTACCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494914_AUS_NSW_ROCKF-1_2011.33"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCAGGCACTCCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_WA_WonganHills_2012.74"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494939_AUS_SA_TF-2186_2008.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="GU373618_AUS_ACT_PI-1_2009.50"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="AUS_SA_Coorong_2004.75"/>
+    ATGGAGGGCAAAGCCCGTACAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494927_AUS_SA_GRNW_2008.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAGGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF594473_AUS_RHDV351-INOC_Passaged_1995.50"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494923_AUS_SA_BULG_2009.67"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGTGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494926_AUS_SA_FRNP-ORA_2008.50"/>
+    ATGGAGGGCAAAGCCCGTGCAGCGCCGCAAGGCGAAGCAGCAGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494922_AUS_SA_BARM_2008.83"/>
+    ATGGAGGGCAAAGCCCGTGCAGCATCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494951_AUS_WA_MARCHA_2010.75"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGCGGGCACTGCCACCACAGCATCAGTTCCTG
+
+    </sequence>
+    
+    <sequence>
+    <taxon idref="KF494941_AUS_SA_TF-PT1339_2011.67"/>
+    ATGGAGGGCAAAGCCCGTGCAGCACCGCAAGGCGAAGCAGTGGGCACTGCCACCACAGCATCAGTTCCCG
+
+    </sequence>
+    
+</alignment>
+	<patterns id="patterns" from="1" strip="false">
+		<alignment idref="alignment"/>
+	</patterns>
+
+	<constantSize id="initialDemo" units="years">
+		<populationSize>
+			<parameter id="initialDemo.popSize" value="100.0"/>
+		</populationSize>
+	</constantSize>
+
+	<coalescentSimulator id="startingTree">
+		<taxa idref="taxa"/>
+		<constantSize idref="initialDemo"/>
+	</coalescentSimulator>
+
+	<treeModel id="treeModel">
+		<coalescentTree idref="startingTree"/>
+		<rootHeight>
+			<parameter id="treeModel.rootHeight"/>
+		</rootHeight>
+		<nodeHeights internalNodes="true">
+			<parameter id="treeModel.internalNodeHeights"/>
+		</nodeHeights>
+		<nodeHeights internalNodes="true" rootNode="true">
+			<parameter id="treeModel.allInternalNodeHeights"/>
+		</nodeHeights>
+	</treeModel>
+
+	<generalizedSkyLineLikelihood id="skyline" linear="false">
+		<populationSizes>
+			<parameter id="skyline.popSize" dimension="10" value="150.0" lower="0.0"/>
+		</populationSizes>
+		<groupSizes>
+			<parameter id="skyline.groupSize" dimension="10"/>
+		</groupSizes>
+		<populationTree>
+			<treeModel idref="treeModel"/>
+		</populationTree>
+	</generalizedSkyLineLikelihood>
+	<exponentialMarkovLikelihood id="eml1" jeffreys="true">
+		<chainParameter>
+			<parameter idref="skyline.popSize"/>
+		</chainParameter>
+	</exponentialMarkovLikelihood>
+
+	<strictClockBranchRates id="branchRates">
+		<rate>
+			<parameter id="clock.rate" value="1.0" lower="0.0"/>
+		</rate>
+	</strictClockBranchRates>
+
+	<gtrModel id="gtr">
+		<frequencies>
+			<frequencyModel dataType="nucleotide">
+				<frequencies>
+					<parameter id="frequencies" value="0.25 0.25 0.25 0.25"/>
+				</frequencies>
+			</frequencyModel>
+		</frequencies>
+		<rateAC>
+			<parameter id="ac" value="1.0" lower="0.0"/>
+		</rateAC>
+		<rateAG>
+			<parameter id="ag" value="1.0" lower="0.0"/>
+		</rateAG>
+		<rateAT>
+			<parameter id="at" value="1.0" lower="0.0"/>
+		</rateAT>
+		<rateCG>
+			<parameter id="cg" value="1.0" lower="0.0"/>
+		</rateCG>
+		<rateGT>
+			<parameter id="gt" value="1.0" lower="0.0"/>
+		</rateGT>
+	</gtrModel>
+
+	<siteModel id="siteModel">
+		<substitutionModel>
+			<gtrModel idref="gtr"/>
+		</substitutionModel>
+		<gammaShape gammaCategories="4">
+			<parameter id="alpha" value="0.5" lower="0.0"/>
+		</gammaShape>
+	</siteModel>
+
+	<treeLikelihood id="treeLikelihood" useAmbiguities="false">
+		<patterns idref="patterns"/>
+		<treeModel idref="treeModel"/>
+		<siteModel idref="siteModel"/>
+		<strictClockBranchRates idref="branchRates"/>
+	</treeLikelihood>
+
+	<operators id="operators" optimizationSchedule="default">
+		<scaleOperator scaleFactor="0.75" weight="0.1">
+			<parameter idref="ac"/>
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.75" weight="0.1">
+			<parameter idref="ag"/>
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.75" weight="0.1">
+			<parameter idref="at"/>
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.75" weight="0.1">
+			<parameter idref="cg"/>
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.75" weight="0.1">
+			<parameter idref="gt"/>
+		</scaleOperator>
+		<deltaExchange delta="0.01" weight="0.1">
+			<parameter idref="frequencies"/>
+		</deltaExchange>
+		<scaleOperator scaleFactor="0.75" weight="0.1">
+			<parameter idref="alpha"/>
+		</scaleOperator>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="clock.rate"/>
+		</scaleOperator>
+		<subtreeSlide size="15.0" gaussian="true" weight="15">
+			<treeModel idref="treeModel"/>
+		</subtreeSlide>
+		<narrowExchange weight="15">
+			<treeModel idref="treeModel"/>
+		</narrowExchange>
+		<wideExchange weight="3">
+			<treeModel idref="treeModel"/>
+		</wideExchange>
+		<wilsonBalding weight="3">
+			<treeModel idref="treeModel"/>
+		</wilsonBalding>
+		<scaleOperator scaleFactor="0.75" weight="3">
+			<parameter idref="treeModel.rootHeight"/>
+		</scaleOperator>
+		<uniformOperator weight="30">
+			<parameter idref="treeModel.internalNodeHeights"/>
+		</uniformOperator>
+		<scaleOperator scaleFactor="0.75" weight="15">
+			<parameter idref="skyline.popSize"/>
+		</scaleOperator>
+		<deltaExchange delta="1" integer="true" weight="6" autoOptimize="false">
+			<parameter idref="skyline.groupSize"/>
+		</deltaExchange>
+		<upDownOperator scaleFactor="0.75" weight="3">
+			<up>
+				<parameter idref="clock.rate"/>
+			</up>
+			<down>
+				<parameter idref="treeModel.allInternalNodeHeights"/>
+			</down>
+		</upDownOperator>
+	</operators>
+
+	<mcmc id="mcmc" chainLength="100000000" autoOptimize="true">
+		<posterior id="posterior">
+			<prior id="prior">
+				<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+					<parameter idref="ac"/>
+				</gammaPrior>
+				<gammaPrior shape="0.05" scale="20.0" offset="0.0">
+					<parameter idref="ag"/>
+				</gammaPrior>
+				<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+					<parameter idref="at"/>
+				</gammaPrior>
+				<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+					<parameter idref="cg"/>
+				</gammaPrior>
+				<gammaPrior shape="0.05" scale="10.0" offset="0.0">
+					<parameter idref="gt"/>
+				</gammaPrior>
+				<uniformPrior lower="0.0" upper="1.0">
+					<parameter idref="frequencies"/>
+				</uniformPrior>
+				<exponentialPrior mean="0.5" offset="0.0">
+					<parameter idref="alpha"/>
+				</exponentialPrior>
+				<uniformPrior lower="0.0" upper="1.0">
+					<parameter idref="clock.rate"/>
+				</uniformPrior>
+				<uniformPrior lower="0.0" upper="1.0E100">
+					<parameter idref="skyline.popSize"/>
+				</uniformPrior>
+				<generalizedSkyLineLikelihood idref="skyline"/>
+				<exponentialMarkovLikelihood idref="eml1"/>
+			</prior>
+			<likelihood id="likelihood">
+				<treeLikelihood idref="treeLikelihood"/>
+			</likelihood>
+		</posterior>
+		<operators idref="operators"/>
+
+		<!-- write log to screen                                                     -->
+		<log id="screenLog" logEvery="5000">
+			<column label="Posterior" dp="4" width="12">
+				<posterior idref="posterior"/>
+			</column>
+			<column label="Prior" dp="4" width="12">
+				<prior idref="prior"/>
+			</column>
+			<column label="Likelihood" dp="4" width="12">
+				<likelihood idref="likelihood"/>
+			</column>
+			<column label="rootHeight" sf="6" width="12">
+				<parameter idref="treeModel.rootHeight"/>
+			</column>
+			<column label="clock.rate" sf="6" width="12">
+				<parameter idref="clock.rate"/>
+			</column>
+		</log>
+
+		<!-- write log to file                                                       -->
+		<log id="fileLog" logEvery="5000" fileName="rhdv_ss_strict_bs.log" overwrite="false">
+			<posterior idref="posterior"/>
+			<prior idref="prior"/>
+			<likelihood idref="likelihood"/>
+			<parameter idref="treeModel.rootHeight"/>
+			<parameter idref="skyline.popSize"/>
+			<parameter idref="skyline.groupSize"/>
+			<parameter idref="ac"/>
+			<parameter idref="ag"/>
+			<parameter idref="at"/>
+			<parameter idref="cg"/>
+			<parameter idref="gt"/>
+			<parameter idref="frequencies"/>
+			<parameter idref="alpha"/>
+			<parameter idref="clock.rate"/>
+			<treeLikelihood idref="treeLikelihood"/>
+			<generalizedSkyLineLikelihood idref="skyline"/>
+		</log>
+
+		<logTree id="treeFileLog" logEvery="5000" nexusFormat="true" fileName="rhdv_ss_strict_bs.trees" sortTranslationTable="true">
+			<treeModel idref="treeModel"/>
+			<trait name="rate" tag="rate">
+				<strictClockBranchRates idref="branchRates"/>
+			</trait>
+			<posterior idref="posterior"/>
+		</logTree>
+	</mcmc>
+
+	<marginalLikelihoodEstimator chainLength="10000000" pathSteps="100" pathScheme="betaquantile" alpha="0.3">
+		<samplers>
+			<mcmc idref="mcmc"/>
+		</samplers>
+		<pathLikelihood id="pathLikelihood">
+			<source>
+				<posterior idref="posterior"/>
+			</source>
+			<destination>
+				<prior idref="prior"/>
+			</destination>
+		</pathLikelihood>
+		<log id="MLELog" logEvery="1000" fileName="rhdv_ss_strict_bs.mle.log">
+			<pathLikelihood idref="pathLikelihood"/>
+		</log>
+	</marginalLikelihoodEstimator>
+
+	<pathSamplingAnalysis fileName="rhdv_ss_strict_bs.mle.log">
+		<likelihoodColumn name="pathLikelihood.delta"/>
+		<thetaColumn name="pathLikelihood.theta"/>
+	</pathSamplingAnalysis>
+
+	<steppingStoneSamplingAnalysis fileName="rhdv_ss_strict_bs.mle.log">
+		<likelihoodColumn name="pathLikelihood.delta"/>
+		<thetaColumn name="pathLikelihood.theta"/>
+	</steppingStoneSamplingAnalysis>
+
+	<report>
+		<property name="timer">
+			<mcmc idref="mcmc"/>
+		</property>
+	</report>
+</beast>
