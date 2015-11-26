@@ -442,13 +442,11 @@ SEQUENCE_DATES_BLOCK
         <parameter id="rateCG.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateGT.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="gammaShape.s:alignment" name="stateNode">1.0</parameter>
+        <parameter id="popSize.t:alignment" name="stateNode">0.3</parameter>
+        <parameter id="mutationRate.s:alignment" name="stateNode">1.0</parameter>
         <parameter id="ucldMean.c:alignment" name="stateNode">1.0</parameter>
         <parameter id="ucldStdev.c:alignment" lower="0.0" name="stateNode">0.1</parameter>
         <stateNode id="rateCategories.c:alignment" spec="parameter.IntegerParameter" dimension="142">1</stateNode>
-        <parameter id="mutationRate.s:alignment" name="stateNode">1.0</parameter>
-   
-     <parameter id="popSize.t:alignment" name="stateNode">0.3</parameter>
-
     </state>
 
     <init id="RandomTree.t:alignment" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:alignment" taxa="@alignment">
@@ -463,6 +461,18 @@ SEQUENCE_DATES_BLOCK
                 <populationModel id="ConstantPopulation.t:alignment" spec="ConstantPopulation" popSize="@popSize.t:alignment"/>
                 <treeIntervals id="TreeIntervals.t:alignment" spec="TreeIntervals" tree="@Tree.t:alignment"/>
             </distribution>
+
+            <prior id="ucldStdevPrior.c:alignment" name="distribution" x="@ucldStdev.c:alignment">
+                <Gamma id="Gamma.3" name="distr">
+                    <parameter id="RealParameter.00" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.001" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+
+           <prior id="MeanRatePrior.c:alignment" name="distribution" x="@ucldMean.c:alignment">
+                <Uniform id="Uniform.01" name="distr" upper="Infinity"/>
+            </prior>
+            
             <prior id="GammaShapePrior.s:alignment" name="distribution" x="@gammaShape.s:alignment">
                 <Exponential id="Exponential.0" name="distr">
                     <parameter id="RealParameter.0" lower="0.0" name="mean" upper="0.0">1.0</parameter>
@@ -501,38 +511,24 @@ SEQUENCE_DATES_BLOCK
                     <parameter id="RealParameter.010" estimate="false" name="beta">10.0</parameter>
                 </Gamma>
             </prior>
-
-            <prior id="ucldStdevPrior.c:alignment" name="distribution" x="@ucldStdev.c:alignment">
-                <Gamma id="Gamma.05" name="distr">
-                    <parameter id="RealParameter.011" estimate="false" name="alpha">0.5396</parameter>
-                    <parameter id="RealParameter.012" estimate="false" name="beta">0.3819</parameter>
-                </Gamma>
-            </prior>
-
-            <prior id="MeanRatePrior.c:alignment" name="distribution" x="@ucldMean.c:alignment">
-                <Uniform id="Uniform.01" name="distr" upper="Infinity"/>
-            </prior>
-
         </distribution>
 
         <distribution id="likelihood" spec="util.CompoundDistribution">
             <distribution id="treeLikelihood.alignment" spec="TreeLikelihood" data="@alignment" tree="@Tree.t:alignment">
-                <siteModel id="SiteModel.s:alignment" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:alignment">
-                    <parameter id="mutationRate.s:alignment" estimate="false" name="mutationRate">1.0</parameter>
+                <siteModel id="SiteModel.s:alignment" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:alignment" mutationRate="@mutationRate.s:alignment"> 
                     <parameter id="proportionInvariant.s:alignment" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
                     <substModel id="gtr.s:alignment" spec="GTR" rateAC="@rateAC.s:alignment" rateAG="@rateAG.s:alignment" rateAT="@rateAT.s:alignment" rateCG="@rateCG.s:alignment" rateGT="@rateGT.s:alignment">
                         <parameter id="rateCT.s:alignment" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
                         <frequencies id="estimatedFreqs.s:alignment" spec="Frequencies" frequencies="@freqParameter.s:alignment"/>
                     </substModel>
                 </siteModel>
-
-                <branchRateModel id="RelaxedClock.c:alignment" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" rateCategories="@rateCategories.c:alignment" tree="@Tree.t:alignment">
+                
+                <branchRateModel id="RelaxedClock.c:alignment" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:alignment" normalize="true" rateCategories="@rateCategories.c:alignment" tree="@Tree.t:alignment">
                     <LogNormal id="LogNormalDistributionModel.c:alignment" S="@ucldStdev.c:alignment" meanInRealSpace="true" name="distr">
-                        <parameter id="RealParameter.013" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                        <parameter id="RealParameter.011" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
                     </LogNormal>
-                    <parameter id="ucldMean.c:alignment" estimate="false" name="clock.rate">1.0</parameter>
                 </branchRateModel>
-
+                
             </distribution>
         </distribution>
     </distribution>
@@ -558,19 +554,25 @@ SEQUENCE_DATES_BLOCK
     <operator id="PopSizeScaler.t:alignment" spec="ScaleOperator" parameter="@popSize.t:alignment" scaleFactor="0.75" weight="3.0"/>
 
 
-  <operator id="ucldMeanScaler.c:RHDV" spec="ScaleOperator" parameter="@ucldMean.c:RHDV" scaleFactor="0.5" weight="1.0"/>
-    <operator id="relaxedUpDownOperator.c:RHDV" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
-        <up idref="ucldMean.c:RHDV"/>
-        <down idref="Tree.t:RHDV"/>
+    <operator id="ucldMeanScaler.c:alignment" spec="ScaleOperator" parameter="@ucldMean.c:alignment" scaleFactor="0.5" weight="1.0"/>
+
+    <operator id="ucldStdevScaler.c:alignment" spec="ScaleOperator" parameter="@ucldStdev.c:alignment" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:alignment" spec="IntRandomWalkOperator" parameter="@rateCategories.c:alignment" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:alignment" spec="SwapOperator" intparameter="@rateCategories.c:alignment" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:alignment" spec="UniformOperator" parameter="@rateCategories.c:alignment" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperator.c:alignment" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:alignment"/>
+        <down idref="Tree.t:alignment"/>
     </operator>
+
     <operator id="FixMeanMutationRatesOperator" spec="DeltaExchangeOperator" delta="0.75" weight="2.0">
-        <parameter idref="mutationRate.s:RHDV"/>
+        <parameter idref="mutationRate.s:alignment"/>
         <weightvector id="weightparameter" spec="parameter.IntegerParameter" estimate="false" lower="0" upper="0">1737</weightvector>
     </operator>
-    <operator id="ucldStdevScaler.c:alignment" spec="ScaleOperator" parameter="@ucldStdev.c:alignment" scaleFactor="0.5" weight="3.0"/>
-    <operator id="CategoriesRandomWalk.c:alignment" spec="IntRandomWalkOperator" parameter="@rateCategories.c:alignment" weight="10.0" windowSize="1"/>
-    <operator id="CategoriesSwapOperator.c:alignment" spec="SwapOperator" intparameter="@rateCategories.c:alignment" weight="10.0"/>
-    <operator id="CategoriesUniform.c:alignment" spec="UniformOperator" parameter="@rateCategories.c:alignment" weight="10.0"/>
 
 
     <logger id="tracelog" fileName="FILE_NAME.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
@@ -588,8 +590,8 @@ SEQUENCE_DATES_BLOCK
         <log idref="gammaShape.s:alignment"/>
         <log idref="popSize.t:alignment"/>
         <log idref="CoalescentConstant.t:alignment"/>
-        <log idref="ucldMean.c:RHDV"/>
-        <log idref="ucldStdev.c:RHDV"/>
+        <log idref="ucldMean.c:alignment"/>
+        <log idref="ucldStdev.c:alignment"/>
         <log id="rate.c:alignment" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:alignment" tree="@Tree.t:alignment"/>
         <log idref="mutationRate.s:alignment"/>
     </logger>
@@ -599,7 +601,9 @@ SEQUENCE_DATES_BLOCK
         <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
+	    <log idref="ucldMean.c:alignment"/>
         <log idref="ucldStdev.c:alignment"/>
+
     </logger>
 
     <logger id="treelog.t:alignment" fileName="FILE_NAME.trees" logEvery="1000" mode="tree">
@@ -610,7 +614,6 @@ SEQUENCE_DATES_BLOCK
 
 </beast>
 '''
-
 
 
 
@@ -665,4 +668,11 @@ def make_strict_exponential(seq_input, out_name):
     s3 = re.sub('FILE_NAME', out_name, s2)
     return s3
 
-
+def make_ucld_constant(seq_input, out_name):
+    sequences = make_sequence_block(seq_input)
+    dates = make_dates_block(seq_input)
+    s1 = re.sub('SEQUENCE_DEFINITION_BLOCK', sequences, ucld_constant)
+    s2 = re.sub('SEQUENCE_DATES_BLOCK', dates, s1)
+    s3 = re.sub('FILE_NAME', out_name, s2)
+    return s3
+    

@@ -1,0 +1,171 @@
+#
+#model:
+#
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.core.util.CompoundDistribution">
+#    <distribution id="prior" spec="beast.core.util.CompoundDistribution">
+#        <distribution id="CoalescentConstant.t:alignment" spec="beast.evolution.tree.coalescent.Coalescent">
+#            <populationModel id="ConstantPopulation.t:alignment" spec="beast.evolution.tree.coalescent.ConstantPopulation">
+#                <parameter id="popSize.t:alignment" name="popSize">0.3</parameter>
+#            </populationModel>
+#            <treeIntervals id="TreeIntervals.t:alignment" spec="beast.evolution.tree.coalescent.TreeIntervals">
+#                <tree id="Tree.t:alignment">
+#                    <trait id="dateTrait.t:alignment" spec="beast.evolution.tree.TraitSet" traitname="date">
+#AUS_SA_FlindersRanges_2002.79=2002.79,
+#KF494932_AUS_SA_PLUM_1995.83=1995.83,
+#KF494911_AUS_ACT_WESTCRK_2011.67=2011.67,
+#KF494944_AUS_SA_TF-PT1743_2008.75=2008.75,
+#KF494943_AUS_SA_TF-PT1731_2008.83=2008.83,
+#KF494919_AUS_NSW_YOUNG_2011.58=2011.58,
+#KF494950_AUS_WA_MANMAN_2010.75=2010.75,
+#KF594475_AUS_SA_Turretfield-07_2007.50=2007.50,
+#AUS_SA_Bulgania_2009.65=2009.65,
+#KF594476_AUS_SA_Turretfield-09_2009.50=2009.50,
+#KF494916_AUS_NSW_ROCKL-1_2011.25=2011.25,
+#KF494925_AUS_SA_ECH_2008.75=2008.75,
+#KF494915_AUS_NSW_ROCKF-2_2011.33=2011.33,
+#KF494934_AUS_SA_ROXDWNS_2011.67=2011.67,
+#KF494949_AUS_TAS_STHARM_2007.42=2007.42,
+#AUS_SA_Motpena_2013.72=2013.72,
+#KF494935_AUS_SA_TF-07_1999.83=1999.83,
+#AUS_WA_Bunbury_2000.13=2000.13,
+#AUS_SA_BillaKallina_2004.50=2004.50,
+#KF494918_AUS_NSW_WOODSTK_2011.25=2011.25,
+#AUS_NSW_Murrumbateman_BlueGums_2014.24=2014.24,
+#KF494906_AUS_ACT_GUN-01_2009.25=2009.25,
+#KF494945_AUS_SA_TF-PT1839_2009.83=2009.83,
+#AUS_SA_Woodcroft_2005.76=2005.76,
+#KF494910_AUS_ACT_PARKWOOD_1998.75=1998.75,
+#EU650679_AUS_NSW_NYNGAN_2005.83=2005.83,
+#KF494940_AUS_SA_TF-2863_2011.67=2011.67,
+#KF494936_AUS_SA_TF-13_1999.83=1999.83,
+#KF494908_AUS_ACT_GUN-RP_1998.75=1998.75,
+#KF494924_AUS_SA_CURNAMONA_1995.83=1995.83,
+#AUS_WA_Gnowangerup_1999.40=1999.40,
+#AUS_SA_FlindersRanges_2006.59=2006.59,
+#AUS_NSW_Grafton_2013.52=2013.52,
+#GU373617_AUS_ACT_AINSLE-2_2009.50=2009.50,
+#KF494917_AUS_NSW_ROCKL-2_2011.25=2011.25,
+#AUS_SA_Hillbank_2008.79=2008.79,
+#KF494948_AUS_TAS_COLLINS-1_2006.67=2006.67,
+#AUS_TAS_SouthArm_2007.34=2007.34,
+#AUS_SA_Robe_2000.39=2000.39,
+#KF494930_AUS_SA_ORR-1_2010.83=2010.83,
+#AUS_SA_FlindersRanges_1999.81=1999.81,
+#AUS_NSW_Hall_WAT1-13_2007.94=2007.94,
+#KF594474_AUS_SA_Turretfield-06_2006.50=2006.50,
+#AUS_SA_OneTreeHill_2003.71=2003.71,
+#KF494907_AUS_ACT_GUN-HS_1998.75=1998.75,
+#KF494952_AUS_WA_NARRIN_2010.92=2010.92,
+#KF494912_AUS_NSW_OC-M2_2007.75=2007.75,
+#KF494937_AUS_SA_TF-19_2006.92=2006.92,
+#KF494920_AUS_NSW_VITTO_2011.17=2011.17,
+#KF494946_AUS_SA_WILKA_2010.42=2010.42,
+#EU650680_AUS_NSW_NARRAWA_2006.83=2006.83,
+#KF494947_AUS_SA_WILLOCHRACRK_1995.92=1995.92,
+#KF494942_AUS_SA_TF-PT1350_2011.75=2011.75,
+#KF494931_AUS_SA_PLUM-1_2010.67=2010.67,
+#KF494929_AUS_SA_MERNMORA_1995.92=1995.92,
+#KF494909_AUS_ACT_MTP-2_2010.17=2010.17,
+#KF494933_AUS_SA_RENMARK_2011.75=2011.75,
+#KF494938_AUS_SA_TF-1907_2006.92=2006.92,
+#KF494913_AUS_NSW_OC-M8_2007.25=2007.25,
+#KF494928_AUS_SA_LOB-OLIVER08_2003.67=2003.67,
+#KF494914_AUS_NSW_ROCKF-1_2011.33=2011.33,
+#AUS_WA_WonganHills_2012.74=2012.74,
+#KF494939_AUS_SA_TF-2186_2008.83=2008.83,
+#GU373618_AUS_ACT_PI-1_2009.50=2009.50,
+#AUS_SA_Coorong_2004.75=2004.75,
+#KF494927_AUS_SA_GRNW_2008.83=2008.83,
+#KF594473_AUS_RHDV351-INOC_Passaged_1995.50=1995.50,
+#KF494923_AUS_SA_BULG_2009.67=2009.67,
+#KF494926_AUS_SA_FRNP-ORA_2008.50=2008.50,
+#KF494922_AUS_SA_BARM_2008.83=2008.83,
+#KF494951_AUS_WA_MARCHA_2010.75=2010.75,
+#KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
+#                        <taxa id="TaxonSet.alignment" spec="beast.evolution.alignment.TaxonSet">
+#                        </taxa>
+#                    </trait>
+#                    <taxonset idref="TaxonSet.alignment"/>
+#                </tree>
+#            </treeIntervals>
+#        </distribution>
+#        <prior id="ucldStdevPrior.c:alignment" name="distribution">
+#            <parameter id="ucldStdev.c:alignment" lower="0.0" name="x">0.1</parameter>
+#            <Gamma id="Gamma.3" name="distr">
+#                <parameter estimate="false" id="RealParameter.00" name="alpha">0.5396</parameter>
+#                <parameter estimate="false" id="RealParameter.001" name="beta">0.3819</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="MeanRatePrior.c:alignment" name="distribution">
+#            <parameter id="ucldMean.c:alignment" name="x">1.0</parameter>
+#            <Uniform id="Uniform.01" name="distr" upper="Infinity"/>
+#        </prior>
+#        <prior id="GammaShapePrior.s:alignment" name="distribution">
+#            <parameter id="gammaShape.s:alignment" name="x">1.0</parameter>
+#            <Exponential id="Exponential.0" name="distr">
+#                <parameter id="RealParameter.0" lower="0.0" name="mean" upper="0.0">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="PopSizePrior.t:alignment" name="distribution" x="@popSize.t:alignment">
+#            <OneOnX id="OneOnX.0" name="distr"/>
+#        </prior>
+#        <prior id="RateACPrior.s:alignment" name="distribution">
+#            <parameter id="rateAC.s:alignment" lower="0.0" name="x">1.0</parameter>
+#            <Gamma id="Gamma.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.01" name="alpha">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.02" name="beta">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateAGPrior.s:alignment" name="distribution">
+#            <parameter id="rateAG.s:alignment" lower="0.0" name="x">1.0</parameter>
+#            <Gamma id="Gamma.01" name="distr">
+#                <parameter estimate="false" id="RealParameter.03" name="alpha">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.04" name="beta">20.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateATPrior.s:alignment" name="distribution">
+#            <parameter id="rateAT.s:alignment" lower="0.0" name="x">1.0</parameter>
+#            <Gamma id="Gamma.02" name="distr">
+#                <parameter estimate="false" id="RealParameter.05" name="alpha">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.06" name="beta">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateCGPrior.s:alignment" name="distribution">
+#            <parameter id="rateCG.s:alignment" lower="0.0" name="x">1.0</parameter>
+#            <Gamma id="Gamma.03" name="distr">
+#                <parameter estimate="false" id="RealParameter.07" name="alpha">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.08" name="beta">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateGTPrior.s:alignment" name="distribution">
+#            <parameter id="rateGT.s:alignment" lower="0.0" name="x">1.0</parameter>
+#            <Gamma id="Gamma.04" name="distr">
+#                <parameter estimate="false" id="RealParameter.09" name="alpha">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.010" name="beta">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#    </distribution>
+#    <distribution id="likelihood" spec="beast.core.util.CompoundDistribution">
+#        <distribution data="@alignment" id="treeLikelihood.alignment" spec="beast.evolution.likelihood.TreeLikelihood" tree="@Tree.t:alignment">
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:alignment" shape="@gammaShape.s:alignment" spec="beast.evolution.sitemodel.SiteModel">
+#                <parameter id="mutationRate.s:alignment" name="mutationRate">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:alignment" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+#                <substModel id="gtr.s:alignment" rateAC="@rateAC.s:alignment" rateAG="@rateAG.s:alignment" rateAT="@rateAT.s:alignment" rateCG="@rateCG.s:alignment" rateGT="@rateGT.s:alignment" spec="beast.evolution.substitutionmodel.GTR">
+#                    <parameter estimate="false" id="rateCT.s:alignment" lower="0.0" name="rateCT">1.0</parameter>
+#                    <frequencies id="estimatedFreqs.s:alignment" spec="beast.evolution.substitutionmodel.Frequencies">
+#                        <parameter dimension="4" id="freqParameter.s:alignment" lower="0.0" name="frequencies" upper="1.0">0.25</parameter>
+#                    </frequencies>
+#                </substModel>
+#            </siteModel>
+#            <branchRateModel clock.rate="@ucldMean.c:alignment" id="RelaxedClock.c:alignment" normalize="true" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" tree="@Tree.t:alignment">
+#                <LogNormal S="@ucldStdev.c:alignment" id="LogNormalDistributionModel.c:alignment" meanInRealSpace="true" name="distr">
+#                    <parameter estimate="false" id="RealParameter.011" lower="0.0" name="M" upper="1.0">1.0</parameter>
+#                </LogNormal>
+#                <rateCategories dimension="142" id="rateCategories.c:alignment" spec="beast.core.parameter.IntegerParameter">1</rateCategories>
+#            </branchRateModel>
+#        </distribution>
+#    </distribution>
+#</input>
+#
+Sample	posterior	likelihood	prior	treeLikelihood	TreeHeight	freqParameter.1	freqParameter.2	freqParameter.3	freqParameter.4	rateAC	rateAG	rateAT	rateCG	rateGT	gammaShape	popSize	CoalescentConstant	ucldMean	ucldStdev	rate.mean	rate.variance	rate.coefficientOfVariation	mutationRate	
+0	-30497.966036640824	-30368.64209875299	-129.32393788783367	-30368.64209875299	21.111758845482026	0.25	0.25	0.25	0.25	1.0	1.0	1.0	1.0	1.0	1.0	0.3	-114.44257519974525	1.0	0.1	0.9999999999999994	0.009432600443399698	0.10010863755279226	1.0	
