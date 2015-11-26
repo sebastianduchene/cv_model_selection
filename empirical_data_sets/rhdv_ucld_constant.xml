@@ -616,7 +616,8 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
 
         <distribution id="likelihood" spec="util.CompoundDistribution">
             <distribution id="treeLikelihood.alignment" spec="TreeLikelihood" data="@alignment" tree="@Tree.t:alignment">
-                <siteModel id="SiteModel.s:alignment" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:alignment" mutationRate="@mutationRate.s:alignment">
+                <siteModel id="SiteModel.s:alignment" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:alignment">
+                    <parameter id="mutationRate.s:sequence_data" estimate="false" name="mutationRate">1.0</parameter>
 
                     <parameter id="proportionInvariant.s:alignment" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
                     <substModel id="gtr.s:alignment" spec="GTR" rateAC="@rateAC.s:alignment" rateAG="@rateAG.s:alignment" rateAT="@rateAT.s:alignment" rateCG="@rateCG.s:alignment" rateGT="@rateGT.s:alignment">

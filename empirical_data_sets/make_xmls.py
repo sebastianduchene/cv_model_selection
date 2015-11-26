@@ -4,7 +4,6 @@ import re, sys, os
 
 strict_constant = '''<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" version="2.0">
 
-
     <data
 id="alignment"
 name="alignment">
@@ -359,8 +358,6 @@ SEQUENCE_DATES_BLOCK
     </operator>
 
 
-
-
     <logger id="tracelog" fileName="FILE_NAME.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
@@ -401,7 +398,6 @@ SEQUENCE_DATES_BLOCK
 
 
 
-import re, sys, os
 
 ucld_constant = '''<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" version="2.0">
 
@@ -525,7 +521,7 @@ SEQUENCE_DATES_BLOCK
                     </substModel>
                 </siteModel>
                 
-                <branchRateModel id="RelaxedClock.c:alignment" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:alignment" normalize="true" rateCategories="@rateCategories.c:alignment" tree="@Tree.t:alignment">
+                <branchRateModel id="RelaxedClock.c:alignment" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:alignment" rateCategories="@rateCategories.c:alignment" tree="@Tree.t:alignment">
                     <LogNormal id="LogNormalDistributionModel.c:alignment" S="@ucldStdev.c:alignment" meanInRealSpace="true" name="distr">
                         <parameter id="RealParameter.011" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
                     </LogNormal>
@@ -749,7 +745,7 @@ SEQUENCE_DATES_BLOCK
                         <frequencies id="estimatedFreqs.s:alignment" spec="Frequencies" frequencies="@freqParameter.s:alignment"/>
                     </substModel>
                 </siteModel>
-                <branchRateModel id="RelaxedClock.c:alignment" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:alignment" normalize="true" rateCategories="@rateCategories.c:alignment" tree="@Tree.t:alignment">
+                <branchRateModel id="RelaxedClock.c:alignment" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:alignment" rateCategories="@rateCategories.c:alignment" tree="@Tree.t:alignment">
                     <LogNormal id="LogNormalDistributionModel.c:alignment" S="@ucldStdev.c:alignment" meanInRealSpace="true" name="distr">
                         <parameter id="RealParameter.333" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
                     </LogNormal>
@@ -828,7 +824,7 @@ SEQUENCE_DATES_BLOCK
     </logger>
 
     <logger id="treelog.t:alignment" fileName="FILE_NAME.trees" logEvery="1000" mode="tree">
-        <log id="TreeWithMetaDataLogger.t:alignment" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:alignment"/>
+        <log id="TreeWithMetaDataLogger.t:alignment" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:alignment" branchratemodel="@RelaxedClock.c:alignment"/>
     </logger>
 
 </run>
@@ -908,12 +904,16 @@ input_seqs = parse_fasta(sys.argv[1])
 
 f_sc = open(re.sub('[.]fasta$', '_strict_constant.xml', sys.argv[1]), 'w')
 f_sc.writelines(make_strict_constant(input_seqs, re.sub('[.]fasta$', '_strict_constant', sys.argv[1])))
+f_sc.close()
 
 f_se = open(re.sub('[.]fasta$', '_strict_exponential.xml', sys.argv[1]), 'w')
 f_se.writelines(make_strict_exponential(input_seqs, re.sub('[.]fasta$', '_strict_exponential', sys.argv[1])))
+f_se.close()
 
 f_rc = open(re.sub('[.]fasta$', '_ucld_constant.xml', sys.argv[1]), 'w')
 f_rc.writelines(make_ucld_constant(input_seqs, re.sub('[.]fasta$', '_ucld_constant', sys.argv[1])))
+f_rc.close()
 
 f_re = open(re.sub('[.]fasta$', '_ucld_exponential.xml', sys.argv[1]), 'w')
-f_rc.writelines(make_ucld_exponential(input_seqs, re.sub('[.]fasta$', '_ucld_exponential', sys.argv[1])))
+f_re.writelines(make_ucld_exponential(input_seqs, re.sub('[.]fasta$', '_ucld_exponential', sys.argv[1])))
+f_re.close()
