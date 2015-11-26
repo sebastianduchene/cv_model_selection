@@ -174,6 +174,8 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
 
         </tree>
 
+
+
         <parameter id="freqParameter.s:alignment" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
         <parameter id="rateAC.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateAG.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
@@ -181,11 +183,9 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
         <parameter id="rateCG.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="rateGT.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
         <parameter id="gammaShape.s:alignment" name="stateNode">1.0</parameter>
-        <parameter id="ePopSize.t:alignment" name="stateNode">0.3</parameter>
-        <parameter id="growthRate.t:alignment" name="stateNode">3.0E-4</parameter>
+        <parameter id="popSize.t:alignment" name="stateNode">0.3</parameter>
         <parameter id="mutationRate.s:alignment" name="stateNode">1.0</parameter>
         <parameter id="clockRate.c:alignment" name="stateNode">1.0</parameter>
-
     </state>
 
     <init id="RandomTree.t:alignment" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:alignment" taxa="@alignment">
@@ -196,9 +196,8 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
 
     <distribution id="posterior" spec="util.CompoundDistribution">
         <distribution id="prior" spec="util.CompoundDistribution">
-
-            <distribution id="CoalescentExponential.t:alignment" spec="Coalescent">
-                <populationModel id="ExponentialGrowth.t:alignment" spec="ExponentialGrowth" growthRate="@growthRate.t:alignment" popSize="@ePopSize.t:alignment"/>
+            <distribution id="CoalescentConstant.t:alignment" spec="Coalescent">
+                <populationModel id="ConstantPopulation.t:alignment" spec="ConstantPopulation" popSize="@popSize.t:alignment"/>
                 <treeIntervals id="TreeIntervals.t:alignment" spec="TreeIntervals" tree="@Tree.t:alignment"/>
             </distribution>
 
@@ -211,16 +210,9 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
                     <parameter id="RealParameter.0" lower="0.0" name="mean" upper="0.0">1.0</parameter>
                 </Exponential>
             </prior>
-            <prior id="ePopSizePrior.t:alignment" name="distribution" x="@ePopSize.t:alignment">
+            <prior id="PopSizePrior.t:alignment" name="distribution" x="@popSize.t:alignment">
                 <OneOnX id="OneOnX.0" name="distr"/>
             </prior>
-            <prior id="GrowthRatePrior.t:alignment" name="distribution" x="@growthRate.t:alignment">
-                <LaplaceDistribution id="LaplaceDistribution.0" name="distr">
-                    <parameter id="RealParameter.001" estimate="false" name="mu">0.001</parameter>
-                    <parameter id="RealParameter.002" estimate="false" name="scale">30.701135</parameter>
-                </LaplaceDistribution>
-            </prior>
-
             <prior id="RateACPrior.s:alignment" name="distribution" x="@rateAC.s:alignment">
                 <Gamma id="Gamma.0" name="distr">
                     <parameter id="RealParameter.01" estimate="false" name="alpha">0.05</parameter>
@@ -255,8 +247,8 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
 
         <distribution id="likelihood" spec="util.CompoundDistribution">
             <distribution id="treeLikelihood.alignment" spec="TreeLikelihood" data="@alignment" tree="@Tree.t:alignment">
-                <siteModel id="SiteModel.s:alignment" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:alignment" mutationRate="@mutationRate.s:alignment">
-
+                <siteModel id="SiteModel.s:alignment" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:alignment" mutationRate="@mutationRate.s:alignment"> 
+                    
                     <parameter id="proportionInvariant.s:alignment" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
                     <substModel id="gtr.s:alignment" spec="GTR" rateAC="@rateAC.s:alignment" rateAG="@rateAG.s:alignment" rateAT="@rateAT.s:alignment" rateCG="@rateCG.s:alignment" rateGT="@rateGT.s:alignment">
                         <parameter id="rateCT.s:alignment" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
@@ -264,7 +256,6 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
                     </substModel>
                 </siteModel>
                 <branchRateModel id="StrictClock.c:alignment" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:alignment"/>
-
             </distribution>
         </distribution>
     </distribution>
@@ -287,8 +278,7 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
     <operator id="RateCGScaler.s:alignment" spec="ScaleOperator" parameter="@rateCG.s:alignment" scaleFactor="0.5" weight="0.1"/>
     <operator id="RateGTScaler.s:alignment" spec="ScaleOperator" parameter="@rateGT.s:alignment" scaleFactor="0.5" weight="0.1"/>
     <operator id="gammaShapeScaler.s:alignment" spec="ScaleOperator" parameter="@gammaShape.s:alignment" scaleFactor="0.5" weight="0.1"/>
-    <operator id="ePopSizeScaler.t:alignment" spec="ScaleOperator" parameter="@ePopSize.t:alignment" scaleFactor="0.75" weight="3.0"/>
-    <operator id="GrowthRateRandomWalk.t:alignment" spec="RealRandomWalkOperator" parameter="@growthRate.t:alignment" weight="3.0" windowSize="1.0"/>
+    <operator id="PopSizeScaler.t:alignment" spec="ScaleOperator" parameter="@popSize.t:alignment" scaleFactor="0.75" weight="3.0"/>
 
 
     <operator id="FixMeanMutationRatesOperator" spec="DeltaExchangeOperator" delta="0.75" weight="2.0">
@@ -306,7 +296,7 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
 
 
 
-    <logger id="tracelog" fileName="test_strict_exponential.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
+    <logger id="tracelog" fileName="test_strict_constant.xml.log" logEvery="1000" model="@posterior" sanitiseHeaders="true" sort="smart">
         <log idref="posterior"/>
         <log idref="likelihood"/>
         <log idref="prior"/>
@@ -319,11 +309,9 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
         <log idref="rateCG.s:alignment"/>
         <log idref="rateGT.s:alignment"/>
         <log idref="gammaShape.s:alignment"/>
-        <log idref="CoalescentExponential.t:alignment"/>
-        <log idref="ePopSize.t:alignment"/>
-        <log idref="growthRate.t:alignment"/>
+        <log idref="popSize.t:alignment"/>
+        <log idref="CoalescentConstant.t:alignment"/>
         <log idref="clockRate.c:alignment"/>
-
     </logger>
 
     <logger id="screenlog" logEvery="1000">
@@ -332,10 +320,9 @@ KF494941_AUS_SA_TF-PT1339_2011.67=2011.67
         <log idref="likelihood"/>
         <log idref="prior"/>
         <log idref="clockRate.c:alignment"/>
-
     </logger>
 
-    <logger id="treelog.t:alignment" fileName="test_strict_exponential.trees" logEvery="1000" mode="tree">
+    <logger id="treelog.t:alignment" fileName="test_strict_constant.xml.trees" logEvery="1000" mode="tree">
         <log id="TreeWithMetaDataLogger.t:alignment" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:alignment"/>
     </logger>
 
