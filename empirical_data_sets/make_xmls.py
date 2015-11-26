@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import re, sys, os
 
 strict_constant = '''<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" version="2.0">
@@ -866,9 +868,6 @@ def make_dates_block(seq_input):
         block_temp.append(n+'='+get_date(n))
     return ',\n'.join(block_temp)
 
-###
-###
-
 
 def make_strict_constant(seq_input, out_name):
     sequences = make_sequence_block(seq_input)
@@ -903,3 +902,18 @@ def make_ucld_exponential(seq_input, out_name):
     s3 = re.sub('FILE_NAME', out_name, s2)
     return s3
 
+
+
+input_seqs = parse_fasta(sys.argv[1])
+
+f_sc = open(re.sub('[.]fasta$', '_strict_constant.xml', sys.argv[1]), 'w')
+f_sc.writelines(make_strict_constant(input_seqs, re.sub('[.]fasta$', '_strict_constant', sys.argv[1])))
+
+f_se = open(re.sub('[.]fasta$', '_strict_exponential.xml', sys.argv[1]), 'w')
+f_se.writelines(make_strict_exponential(input_seqs, re.sub('[.]fasta$', '_strict_exponential', sys.argv[1])))
+
+f_rc = open(re.sub('[.]fasta$', '_ucld_constant.xml', sys.argv[1]), 'w')
+f_rc.writelines(make_ucld_constant(input_seqs, re.sub('[.]fasta$', '_ucld_constant', sys.argv[1])))
+
+f_re = open(re.sub('[.]fasta$', '_ucld_exponential.xml', sys.argv[1]), 'w')
+f_rc.writelines(make_ucld_exponential(input_seqs, re.sub('[.]fasta$', '_ucld_exponential', sys.argv[1])))
