@@ -1,0 +1,25 @@
+library(phangorn)
+
+log_strict_constant <- read.table('enterovir_training2_strict_constant.log', head = T)
+log_strict_constant <- log_strict_constant[(nrow(log_strict_constant) - 100):(nrow(log_strict_constant)), ]
+trees_strict_constant <- read.tree('enterovir_training2_strict_constant_phylogs.trees')
+test_strict_constant <- phyDat(read.dna('enterovir_test2.fasta', format = 'fasta'))
+#strict_constant_liks <- get_likelihoods(log_strict_constant, trees_strict_constant, test_data = test_strict_constant)
+#print(mean(log_strict_constant$likelihood))
+#print(mean(strict_constant_liks))
+
+
+log_data <- log_strict_constant
+tree_data <- trees_strict_constant
+test_data <- test_strict_constant
+gamma <- log_data$gammaShape
+    freqs <- log_data[c('freqParameter.1','freqParameter.2', 'freqParameter.3', 'freqParameter.4')]
+    ex_rates <- log_data[c('rateAC', 'rateAG', 'rateAT', 'rateCG' ,'rateGT')]
+
+    liks <- vector()
+    for(i in 1:90){#length(tree_data)){
+        # Calculate phhylogenetic likelihood for each posterior sample
+        liks[i] <- tryCatch(pml(tree = tree_data[[i]], data= test_data, bf = as.numeric(freqs[i, ]), Q = as.numeric(c(ex_rates[i, ], 1)),
+                               k = 4, shape = gamma[i])$logLik, error = function(x) return(NA))
+        print(liks[i])
+    }
