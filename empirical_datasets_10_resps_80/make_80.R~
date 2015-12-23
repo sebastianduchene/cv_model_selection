@@ -1,0 +1,34 @@
+library(ape)
+setwd('rhdv_test')
+
+
+dat <- read.dna('rhdv.fasta', format = 'fasta')
+
+f1 <- gsub('[-]', '', rownames(dat))
+f2 <- vector()
+for(i in 1:length(f1)){
+    a <- strsplit(f1[i], '_')[[1]]
+    b <- paste0(a[1], '_', a[length(a)])
+    f2 <- c(f2, b)
+}
+
+rownames(dat) <- f2
+write.dna(dat, file = 'rhdv.fasta', format = 'fasta', nbcol = -1, colsep = '')
+
+dat <- dat[, 1:(ncol(dat)-1)]
+
+
+for(i in 1:10){
+    train_samples <- sample(1:ncol(dat), size = ncol(dat)*0.8)
+    training <- dat[, train_samples]
+    test <- dat[, -train_samples]
+    write.dna(training, file = paste0('rhdv_training_', i, '.fasta'), format = 'fasta', nbcol = -1, colsep = '')
+    write.dna(test, file = paste0('rhdv_test_', i, '.fasta'), format = 'fasta', nbcol = -1, colsep = '')
+}
+
+fastas <- dir(pattern = '.+training.+fasta')
+fastas
+
+for(f in fastas){
+    system(paste('../make_xmls.py', f))
+}

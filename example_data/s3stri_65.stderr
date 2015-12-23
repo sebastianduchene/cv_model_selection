@@ -1,0 +1,10 @@
+jardir = /usr/local/beast/2.2.0/lib/launcher.jar
+Checking out /usr/local/beast/2.2.0/lib/lib
+Checking out /usr/local/beast/2.2.0/lib
+Loaded URL file:/usr/local/beast/2.2.0/lib/beast.jar
+File: s3_strict_subset_ucld.xml seed: 1446146173332 threads: 1
+Failed to load BEAGLE library: no hmsbeagle-jni in java.library.path
+Start likelihood: -80847.65651488859 
+Writing file s3_strict_subset_ucld.log
+Writing file s3_strict_subset_ucld.trees
+End likelihood: -20041.378899178166

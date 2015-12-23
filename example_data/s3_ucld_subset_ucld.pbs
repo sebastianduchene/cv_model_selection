@@ -1,0 +1,37 @@
+#!/bin/bash
+#PBS -N s3ucld_20
+#PBS -l nodes=1:ppn=2
+#PBS -l walltime=50:00:00
+#PBS -l pmem=16gb
+
+#PBS -m abe
+#PBS -o s3ucld_20.stdout
+#PBS -e s3ucld_20.stderr
+#PBS -P RDS-FSC-VirusRates-RW
+
+
+#module load beagle
+module load beagle
+module load beast/2.2.0
+# Print the default PBS server
+echo PBS default server is $PBS_DEFAULT
+# Print the job's working directory and enter it.
+echo Working directory is $PBS_O_WORKDIR
+cd $PBS_O_WORKDIR
+ 
+# Print some other environment information
+echo Running on host `hostname`
+echo Time is `date`
+echo Directory is `pwd`
+echo This jobs runs on the following processors:
+NODES=`cat $PBS_NODEFILE`
+echo $NODES
+# Compute the number of processorsNPROCS=`wc -l < $PBS_NODEFILE`
+echo This job has allocated $NPROCS nodes
+
+beast -overwrite s3_ucld_subset_ucld.xml
+
+
+
+
+

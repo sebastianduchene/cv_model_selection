@@ -34,8 +34,9 @@ print out_file
 trees_in_comp = dp.TreeList.get_from_path(input_file, 'nexus', extract_comment_metadata = True)
 
 # Modified code to run only the last 100 trees
-trees_in = trees_in_comp[(len(trees_in_comp) - 100):len(trees_in_comp)]
+#trees_in = trees_in_comp[(len(trees_in_comp) - 100):len(trees_in_comp)]
 
+trees_in = trees_in_comp
 trs = get_phylogs(trees_in)
 
 

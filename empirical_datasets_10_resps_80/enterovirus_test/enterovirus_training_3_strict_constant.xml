@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" version="2.0">
+
+
+    <data
+id="alignment"
+name="alignment">
+<sequence id="0_068_2013.85" taxon="0_068_2013.85" totalcount="4" value="aatagaaacagttgtctgcgtcatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatagtcacggctcggcggtaggcttagatacccaagcctatcgaagacctgacagcatgtcagaaccgagatggccttagtcctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtggctgcaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttccccccgcaccgacttcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaaaaaatccgtgagacagggccaactcgtatgtacctccaggactagaacaattgttattttgaatgttaaatgcatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagcagctttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacaaataacggaatcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49169_2011.78" taxon="49169_2011.78" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcctatcgaagacctgacagcatgtcagaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctgcaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagctggtatccccgcaactcggtccaaggaaaaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggcaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacaaataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49098_2012.35" taxon="49098_2012.35" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccctgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagttgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49154_2012.87" taxon="49154_2012.87" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcacgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagctggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49100_2012.36" taxon="49100_2012.36" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccctgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagttgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49039_2012.17" taxon="49039_2012.17" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagttgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_079_2013.88" taxon="0_079_2013.88" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcactaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttaattctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagagacttgaacataattcgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49151_2012.85" taxon="49151_2012.85" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctgggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="1_055_2013.79" taxon="1_055_2013.79" totalcount="4" value="aatagaaacagttgtctgcgtcatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatagtcacggctcggcggtaggcttagatacccaagcctatcgaagacctgacagcatgtcagaaccgagatggccttagtcctggacgaagctggacgggatacgtgtaaagatatgtcttatcgtggctgcaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttccccccgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaaaaaatccgtgagacagggccaactcgtatgtacctccaggactagaacaattgttattttgaatgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacaaataacggaatcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_065_2013.83" taxon="0_065_2013.83" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacattgtggtaatgcagtcgcggtaccggatggtcacggctcgacggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaaactggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgcatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacactggtatggtaaaccttcagataagaggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49106_2012.37" taxon="49106_2012.37" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcattttttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagttgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49090_2012.32" taxon="49090_2012.32" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccctgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagttgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_072_2013.86" taxon="0_072_2013.86" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtctgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacccaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggaattgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="1_008_2013.59" taxon="1_008_2013.59" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgtccatatactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaaaatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataattcgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_003_2013.86" taxon="0_003_2013.86" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgtaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgtttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttacgatctagctgggcgcttgctgctacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_090_2013.91" taxon="0_090_2013.91" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgtccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaaaatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataattcgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttatgatctagctgggcgtttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49162_2012.98" taxon="49162_2012.98" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtacgttaggcaccggttcaagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcagaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaagggagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="1_043_2013.74" taxon="1_043_2013.74" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgtccatacactgtggtaatgcagtcgcggtaccggacggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtctcatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccaacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagctacgatctagctgggcgcttactgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_070_2013.85" taxon="0_070_2013.85" totalcount="4" value="aacagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccctgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttatcttgaacgttaaatacatccgggtgtcagagacttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttatgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="1_005_2013.59" taxon="1_005_2013.59" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcctatcgaagacctgacagcatgtcaggaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctgcaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagccatgtctcagctggagccggtatccccgcaactcggtccaaggaaaaaatccgtgagacagggccaactcgtatgtacctccaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacaaataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_024_2013.69" taxon="0_024_2013.69" totalcount="4" value="aacagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatctccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttatcttgaacgttaaatacatccgggtgtcagagacttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgagcaccggtatggtaaaccttcagataaggggcactgttctactagttatgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_060_2013.81" taxon="0_060_2013.81" totalcount="4" value="aatagaaacagttgcctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagggatgtccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctgaacgaagctggacgggacacgtgtaaagatatgtctaatcgtagctacaaagacgcaagtttgcgtatgacgaaccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaattcgcgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatctgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctattagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="1_042_2013.73" taxon="1_042_2013.73" totalcount="4" value="aacagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatctccgcaactcggtccaaggaagaaatccgtgagacagggccaacccgtatgtacctctaggactagaacaattgttatcttgaacgttaaatacatccgggtgtcagagacttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgagcaccggtatggtaaaccttcagataaggggcactgttctactagttatgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49129_2012.46" taxon="49129_2012.46" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctccaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtgactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49157_2012.91" taxon="49157_2012.91" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtctgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggaattgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_071_2013.85" taxon="0_071_2013.85" totalcount="4" value="aatagaaacagttgcctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtctcatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttctttccctcgcaccaacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcctaaggggtttccgaagcatataggttgggagcacctacgtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgctctactagctacgatctagctgggcgcttactgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtggacgcccttggcgtca"/>
+<sequence id="0_002_2013.86" taxon="0_002_2013.86" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcaagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccctctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49153_2012.85" taxon="49153_2012.85" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcctatcgaagacctgacagcatgtcagaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctgcaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaaaaaatccgtgagacagggccaactcgtatgtacctccaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacaaatagcggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="49148_2012.83" taxon="49148_2012.83" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaattttacacgtctgcgcgaacaccggtatggtaaaccctcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_083_2013.88" taxon="0_083_2013.88" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcgccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcctatcgaagacctgacagcatgtcaggaccgagatggccttagttctgaacaaagctggacgggacacgtgtaaagatatgtcttatcgtagctgcaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaaaaaatccgtgagacagggccaactcgtatgtacctccaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcacgaacaccggtatggtaaaccctcagataaggggcactgctctactagttacgatctagctgggtgcttgctgttacaaataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="1_065_2013.84" taxon="1_065_2013.84" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagttacgatctagctgggcgcttgctgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_049_2013.76" taxon="0_049_2013.76" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatatactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtcttatcgtagytacaaagacgcaagtctgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccgacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacacaatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctacgcgaacaccggtatggtaaaccctcagataaggggcactgttctattagttacgatctagctgggcgcttgctgttacacataacgaagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+<sequence id="0_023_2013.67" taxon="0_023_2013.67" totalcount="4" value="aatagaaacagttgcctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtctcatcgtagctacaaagacgcaagtttgcgtgtgacgagccttctggttcaccccattccctcatttctttccctcgcaccaacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcctaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagctacgatctagctgggcgcttactgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtggacgcccttggcgtca"/>
+<sequence id="49156_2012.91" taxon="49156_2012.91" totalcount="4" value="aatagaaacagttgtctgcgttatgaattcagcgagtgcgctaggcaccggttcgagagagatgcccatacactgtggtaatgcagtcgcggtaccggatggtcacggctcggcggtaggcttagatacccaagcttatcgaagacctgacagcatgtcaaaaccgagatggccttagttctggacgaagctggacgggacacgtgtaaagatatgtctcatcgtagctacaaagacgcaagtttgcgtatgacgagccttctggttcaccccattccctcatttcttcccctcgcaccaacctcatcgagctatgtctcagctggagccggtatccccgcaactcggtccaaggaagaaatccgtgagacagggccaactcgtatgtacctctaggactagaacaattgttattttgaacgttaaatacatccgggtgtcagaggcttgaacataatccgcttaaggggtttccgaagcatataggttgggagcacctaagtagcaccgttggatcaatcgcagatatatagagtaactttacacgtctgcgcgaacaccggtatggtaaaccttcagataaggggcactgttctactagctacgatctagctgggcgcttactgttacacataacggagtcgcacgtgtagtatacaccgtcgtcgtagacgcccttggcgtca"/>
+</data>
+
+<map name="Uniform">beast.math.distributions.Uniform</map>
+<map name="Exponential">beast.math.distributions.Exponential</map>
+<map name="LogNormal">beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal">beast.math.distributions.Normal</map>
+<map name="Beta">beast.math.distributions.Beta</map>
+<map name="Gamma">beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution">beast.math.distributions.LaplaceDistribution</map>
+<map name="prior">beast.math.distributions.Prior</map>
+<map name="InverseGamma">beast.math.distributions.InverseGamma</map>
+<map name="OneOnX">beast.math.distributions.OneOnX</map>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000">
+    <state id="state" storeEvery="25000">
+
+        <tree id="Tree.t:alignment" name="stateNode">
+            <trait id="dateTrait.t:alignment" spec="beast.evolution.tree.TraitSet" traitname="date">
+0_068_2013.85=2013.85,
+49169_2011.78=2011.78,
+49098_2012.35=2012.35,
+49154_2012.87=2012.87,
+49100_2012.36=2012.36,
+49039_2012.17=2012.17,
+0_079_2013.88=2013.88,
+49151_2012.85=2012.85,
+1_055_2013.79=2013.79,
+0_065_2013.83=2013.83,
+49106_2012.37=2012.37,
+49090_2012.32=2012.32,
+0_072_2013.86=2013.86,
+1_008_2013.59=2013.59,
+0_003_2013.86=2013.86,
+0_090_2013.91=2013.91,
+49162_2012.98=2012.98,
+1_043_2013.74=2013.74,
+0_070_2013.85=2013.85,
+1_005_2013.59=2013.59,
+0_024_2013.69=2013.69,
+0_060_2013.81=2013.81,
+1_042_2013.73=2013.73,
+49129_2012.46=2012.46,
+49157_2012.91=2012.91,
+0_071_2013.85=2013.85,
+0_002_2013.86=2013.86,
+49153_2012.85=2012.85,
+49148_2012.83=2012.83,
+0_083_2013.88=2013.88,
+1_065_2013.84=2013.84,
+0_049_2013.76=2013.76,
+0_023_2013.67=2013.67,
+49156_2012.91=2012.91
+<taxa id="TaxonSet.alignment" spec="TaxonSet">
+                <alignment idref="alignment"/>
+</taxa>
+</trait>
+ <taxonset idref="TaxonSet.alignment"/>
+
+        </tree>
+
+
+
+        <parameter id="freqParameter.s:alignment" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+        <parameter id="rateAC.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAG.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAT.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateCG.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateGT.s:alignment" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="gammaShape.s:alignment" name="stateNode">1.0</parameter>
+        <parameter id="popSize.t:alignment" name="stateNode">0.3</parameter>
+        <parameter id="mutationRate.s:alignment" name="stateNode">1.0</parameter>
+        <parameter id="clockRate.c:alignment" name="stateNode">1.0</parameter>
+    </state>
+
+    <init id="RandomTree.t:alignment" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:alignment" taxa="@alignment">
+        <populationModel id="ConstantPopulation0.t:alignment" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:alignment" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="CoalescentConstant.t:alignment" spec="Coalescent">
+                <populationModel id="ConstantPopulation.t:alignment" spec="ConstantPopulation" popSize="@popSize.t:alignment"/>
+                <treeIntervals id="TreeIntervals.t:alignment" spec="TreeIntervals" tree="@Tree.t:alignment"/>
+            </distribution>
+
+            <prior id="ClockPrior.c:alignment" name="distribution" x="@clockRate.c:alignment">
+                <Uniform id="Uniform.01" name="distr" upper="Infinity"/>
+            </prior>
+
+            <prior id="GammaShapePrior.s:alignment" name="distribution" x="@gammaShape.s:alignment">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" lower="0.0" name="mean" upper="0.0">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="PopSizePrior.t:alignment" name="distribution" x="@popSize.t:alignment">
+                <OneOnX id="OneOnX.0" name="distr"/>
+            </prior>
+            <prior id="RateACPrior.s:alignment" name="distribution" x="@rateAC.s:alignment">
+                <Gamma id="Gamma.0" name="distr">
+                    <parameter id="RealParameter.01" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.02" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateAGPrior.s:alignment" name="distribution" x="@rateAG.s:alignment">
+                <Gamma id="Gamma.01" name="distr">
+                    <parameter id="RealParameter.03" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.04" estimate="false" name="beta">20.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateATPrior.s:alignment" name="distribution" x="@rateAT.s:alignment">
+                <Gamma id="Gamma.02" name="distr">
+                    <parameter id="RealParameter.05" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.06" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateCGPrior.s:alignment" name="distribution" x="@rateCG.s:alignment">
+                <Gamma id="Gamma.03" name="distr">
+                    <parameter id="RealParameter.07" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.08" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateGTPrior.s:alignment" name="distribution" x="@rateGT.s:alignment">
+                <Gamma id="Gamma.04" name="distr">
+                    <parameter id="RealParameter.09" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.010" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+        </distribution>
+
+        <distribution id="likelihood" spec="util.CompoundDistribution">
+            <distribution id="treeLikelihood.alignment" spec="TreeLikelihood" data="@alignment" tree="@Tree.t:alignment">
+                <siteModel id="SiteModel.s:alignment" spec="SiteModel" gammaCategoryCount="4" shape="@gammaShape.s:alignment" mutationRate="@mutationRate.s:alignment"> 
+                    
+                    <parameter id="proportionInvariant.s:alignment" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="gtr.s:alignment" spec="GTR" rateAC="@rateAC.s:alignment" rateAG="@rateAG.s:alignment" rateAT="@rateAT.s:alignment" rateCG="@rateCG.s:alignment" rateGT="@rateGT.s:alignment">
+                        <parameter id="rateCT.s:alignment" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <frequencies id="estimatedFreqs.s:alignment" spec="Frequencies" frequencies="@freqParameter.s:alignment"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="StrictClock.c:alignment" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:alignment"/>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="treeScaler.t:alignment" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:alignment" weight="3.0"/>
+    <operator id="treeRootScaler.t:alignment" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:alignment" weight="3.0"/>
+    <operator id="UniformOperator.t:alignment" spec="Uniform" tree="@Tree.t:alignment" weight="30.0"/>
+    <operator id="SubtreeSlide.t:alignment" spec="SubtreeSlide" tree="@Tree.t:alignment" weight="15.0"/>
+    <operator id="narrow.t:alignment" spec="Exchange" tree="@Tree.t:alignment" weight="15.0"/>
+    <operator id="wide.t:alignment" spec="Exchange" isNarrow="false" tree="@Tree.t:alignment" weight="3.0"/>
+    <operator id="WilsonBalding.t:alignment" spec="WilsonBalding" tree="@Tree.t:alignment" weight="3.0"/>
+
+    <operator id="FrequenciesExchanger.s:alignment" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:alignment"/>
+    </operator>
+
+    <operator id="RateACScaler.s:alignment" spec="ScaleOperator" parameter="@rateAC.s:alignment" scaleFactor="0.5" weight="0.1"/>
+    <operator id="RateAGScaler.s:alignment" spec="ScaleOperator" parameter="@rateAG.s:alignment" scaleFactor="0.5" weight="0.1"/>
+    <operator id="RateATScaler.s:alignment" spec="ScaleOperator" parameter="@rateAT.s:alignment" scaleFactor="0.5" weight="0.1"/>
+    <operator id="RateCGScaler.s:alignment" spec="ScaleOperator" parameter="@rateCG.s:alignment" scaleFactor="0.5" weight="0.1"/>
+    <operator id="RateGTScaler.s:alignment" spec="ScaleOperator" parameter="@rateGT.s:alignment" scaleFactor="0.5" weight="0.1"/>
+    <operator id="gammaShapeScaler.s:alignment" spec="ScaleOperator" parameter="@gammaShape.s:alignment" scaleFactor="0.5" weight="0.1"/>
+    <operator id="PopSizeScaler.t:alignment" spec="ScaleOperator" parameter="@popSize.t:alignment" scaleFactor="0.75" weight="3.0"/>
+
+
+    <operator id="FixMeanMutationRatesOperator" spec="DeltaExchangeOperator" delta="0.75" weight="2.0">
+        <parameter idref="mutationRate.s:alignment"/>
+        <weightvector id="weightparameter" spec="parameter.IntegerParameter" estimate="false" lower="0" upper="0">1737</weightvector>
+    </operator>
+
+    <operator id="StrictClockRateScaler.c:alignment" spec="ScaleOperator" parameter="@clockRate.c:alignment" scaleFactor="0.75" weight="3.0"/>
+
+    <operator id="strictClockUpDownOperator.c:alignment" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="clockRate.c:alignment"/>
+        <down idref="Tree.t:alignment"/>
+    </operator>
+
+
+
+
+    <logger id="tracelog" fileName="enterovirus_training_3_strict_constant.log" logEvery="5000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.alignment"/>
+        <log id="TreeHeight.t:alignment" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:alignment"/>
+        <log idref="freqParameter.s:alignment"/>
+        <log idref="rateAC.s:alignment"/>
+        <log idref="rateAG.s:alignment"/>
+        <log idref="rateAT.s:alignment"/>
+        <log idref="rateCG.s:alignment"/>
+        <log idref="rateGT.s:alignment"/>
+        <log idref="gammaShape.s:alignment"/>
+        <log idref="popSize.t:alignment"/>
+        <log idref="CoalescentConstant.t:alignment"/>
+        <log idref="clockRate.c:alignment"/>
+    </logger>
+
+    <logger id="screenlog" logEvery="5000">
+        <log idref="posterior"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="clockRate.c:alignment"/>
+    </logger>
+
+    <logger id="treelog.t:alignment" fileName="enterovirus_training_3_strict_constant.trees" logEvery="5000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:alignment" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree.t:alignment"/>
+    </logger>
+
+</run>
+
+</beast>

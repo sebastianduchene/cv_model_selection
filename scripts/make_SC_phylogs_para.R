@@ -20,14 +20,14 @@ proc_trees <- function(r){
     write.tree(phylogs_temp, file = gsub('[.]log', '_phylogs.trees', strict_clocks[r]))
 }
 
-strict_clocks <- paste0('runs/', dir('runs/', pattern = 'strict[.]log'))
+strict_clocks <- dir('.', pattern = 'strict[.]log')
 
 # modify to run only last 100 trees
 #for(i in 1:length(strict_clocks)){
 #      print(strict_clocks[i])
 #      proc_trees(i)
 #}
-cl <- makeCluster(7)
+cl <- makeCluster(10)
 registerDoParallel(cl)
 
 get_phylogs <- foreach(x = 1:length(strict_clocks), .packages = 'ape') %dopar% proc_trees(x)
